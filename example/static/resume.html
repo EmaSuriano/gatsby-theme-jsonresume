@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Emanuel Suriano</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <style>body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    padding-top: 30px;
+  }
+
+  .paper {
+    width:95%;
+  }
+
+  .row div {
+    display: block;
+  }
+
+  .content-cat {
+    width: 100%;
+  }
+
+  .content-text ul li {
+    width: 100%;
+  }
+
+  .content-text ul li:first-child {
+    width: 100%;
+  }
+  
+  .education-listing > .highlight {
+    margin-left: 30px;
+  }
+}</style>
+  <style media="print">
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                Emanuel Suriano
+              </p>
+              <p class="subtitle">I am a motivated, enthusiastic person, and passionate about new technologies. Always building side projects which allow me to always be up to date with the current stack in the field.   I firmly believe in the Open Source philosophy, therefore I am a maintainer of some Open Source project, you can find them inside my GitHub profile. Also, I am keen to contribute to Open Source projects whenever I can because I think is the best to grow as a community.</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Email</li>
+                    <li>emanuel.suriano@gmail.com</li>
+                  </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LOCATION -->
+        
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2019-01-01 till today</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p style="margin-top:2.4em;">
+                            <strong>Senior Software Engineer - UI Platform</strong>
+                            at <strong>Omio:</strong>
+                        </p>
+                        <p>Member of the UI Platform team. The main objective of this team is to ensure the quality of all the project inside the company.  Therefore the communication and feedback with all the teams are crucial.  In order to do that, we have created a set of tools that enforce a specific stack of technologies and conventions so all the teams will use the same tools to develop under the hood. The objective of this is to speed up the development process of new projects and provide an easy way to keep up to date current projects.  Apart from developing this tool, we are: - Migrating current Android and iOS projects to React Native. - Maintaining the shared library of React and React Native components. - Enforcing best practices inside the company by tools or talks</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-08-01 till 2019-01-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Software Engineer - Booking Team</strong>
+                            at <strong>Omio:</strong>
+                        </p>
+                        <p>Software developer, working currently with React, Typescript and Node JS. I&#x27;m part of the booking team, one of the most important flows of the application, therefore we have to communicate with several teams in order to ensure a successful Booking.  The team is made up of 5 developers and a PO, and the methodology implemented is Kanban.    Besides shipping new features, we need to make sure that they don&#x27;t affect the users from buying inside the platform. For that, we define a CI process with several checks before a feature is merged, need to periodically check the tracking information of the application, set rotation cycles to be alerted in case something happened inside the application outside work time.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-03-01 till 2018-08-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Web Development Team Lead</strong>
+                            at <strong>intive-FDV:</strong>
+                        </p>
+                        <p>Leading a team of React Web Developers and ensuring development practices and processes are efficient.  Technologies: - ReactJS - Redux - SASS - Jest - Reselect - Enzyme - StoryBook - Lerna - Webpack - Rollup</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-01-01 till today</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Open Source Developer</strong>
+                            at <strong>Open Source:</strong>
+                        </p>
+                        <p>Maintainer of several open source projects and also a contributor on many projects from well know organizations, like ReactJS and GatsbyJS.  For more information, please check my Github profile.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2016-08-01 till 2018-03-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Web Developer</strong>
+                            at <strong>intive-FDV:</strong>
+                        </p>
+                        <p>Building high scalable React/Redux applications. Embracing continuous improvement of the stack and Testing as a main practice. Working within the customers and using Scrum on a daily basis. The project is a suite of 12 products built upon an SPA.  Technologies used: - ReactJS - Redux - SASS - Jest - Reselect - Immutable JS - Enzyme - StoryBook - Webpack</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2015-10-01 till 2016-08-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Web Developer</strong>
+                            at <strong>Globant:</strong>
+                        </p>
+                        <p>.Net C#, Angular JS, Entity Framework, MVC, WEB API</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2014-08-01 till 2015-10-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Sofware Developer</strong>
+                            at <strong>Qservices:</strong>
+                        </p>
+                        <p>ASP .NET C#, Jquery, Bootrstap, SQL</p>
+                    </div>
+                  </div>
+                </section>
+
+
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                          <p>2011-01-01 till 2017-01-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" style="margin-top:2.35em;">Universidad Nacional de La Matanza</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content education-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2009-01-01 till 2011-01-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading">ITI San Judas Tadeo</p>
+                    </div>
+                  </div>
+                </section>
+
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          React.js:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          JavaScript:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          React Native:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Scrum:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Web Development:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Unit Testing:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          SQL:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          C#:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          HTML:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          MySQL:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          CSS:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Git:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          SASS:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Github:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Redux:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Webpack:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Functional Programming:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Integration Testing:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          End-to-end Testing:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Gatsby:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          GraphQL:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          TypeScript:
+                        </strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Jest:
+                        </strong>
+                    </span>
+                  </p>
+              </div>
+            </div>
+          </section>
+
+  <!-- LANGUAGE -->
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Languages
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>Español</li>
+                        <li>Native or bilingual proficiency</li>
+                    </ul>
+                    <ul>
+                        <li>Inglés</li>
+                        <li>Full professional proficiency</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+            <!-- PROFILES -->
+
+
+        </div>
+    </article>
+  </div>
+</body>
+</html>

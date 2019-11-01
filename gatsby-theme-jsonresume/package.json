@@ -1,0 +1,15 @@
+{
+  "name": "gatsby-theme-jsonresume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "emasuriano (@EmaSuriano)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.6.0"
+  },
+  "dependencies": {
+    "resume-cli": "^1.2.7",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}

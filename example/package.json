@@ -6,11 +6,14 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^2.17.6",
-    "gatsby-theme-minimal": "^1.0.0",
+    "gatsby-theme-jsonresume": "^1.0.0",
+    "jsonresume-theme-orbit": "^1.0.3",
+    "jsonresume-theme-paper": "^0.3.5",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }

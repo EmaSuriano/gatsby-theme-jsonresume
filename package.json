@@ -5,10 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspace example build"
+    "build": "yarn workspace example build",
+    "develop": "yarn workspace example develop",
+    "serve": "yarn workspace example serve"
   },
   "workspaces": [
-    "gatsby-theme-minimal",
+    "gatsby-theme-jsonresume",
     "example"
   ]
 }
