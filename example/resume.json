@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Emanuel Suriano",
-    "label": "I am a motivated, enthusiastic person, and passionate about new technologies. Always building side projects which allow me to always be up to date with the current stack in the field.   I firmly believe in the Open Source philosophy, therefore I am a maintainer of some Open Source project, you can find them inside my GitHub profile. Also, I am keen to contribute to Open Source projects whenever I can because I think is the best to grow as a community.",
+    "label": "Just a developer looking to have a cool CV",
     "picture": "",
     "email": "emanuel.suriano@gmail.com",
     "phone": "",
@@ -18,85 +18,23 @@
   },
   "work": [
     {
-      "company": "Omio",
-      "position": "Senior Software Engineer - UI Platform",
+      "company": "A",
+      "position": "Develop - UI Platform",
       "website": "",
       "startDate": "2019-01-01",
-      "summary": "Member of the UI Platform team. The main objective of this team is to ensure the quality of all the project inside the company.  Therefore the communication and feedback with all the teams are crucial.  In order to do that, we have created a set of tools that enforce a specific stack of technologies and conventions so all the teams will use the same tools to develop under the hood. The objective of this is to speed up the development process of new projects and provide an easy way to keep up to date current projects.  Apart from developing this tool, we are: - Migrating current Android and iOS projects to React Native. - Maintaining the shared library of React and React Native components. - Enforcing best practices inside the company by tools or talks",
+      "summary": "Developer of a great team!",
       "highlights": []
-    },
-    {
-      "company": "Omio",
-      "position": "Software Engineer - Booking Team",
-      "website": "",
-      "startDate": "2018-08-01",
-      "summary": "Software developer, working currently with React, Typescript and Node JS. I'm part of the booking team, one of the most important flows of the application, therefore we have to communicate with several teams in order to ensure a successful Booking.  The team is made up of 5 developers and a PO, and the methodology implemented is Kanban.    Besides shipping new features, we need to make sure that they don't affect the users from buying inside the platform. For that, we define a CI process with several checks before a feature is merged, need to periodically check the tracking information of the application, set rotation cycles to be alerted in case something happened inside the application outside work time.",
-      "highlights": [],
-      "endDate": "2019-01-01"
-    },
-    {
-      "company": "intive-FDV",
-      "position": "Web Development Team Lead",
-      "website": "",
-      "startDate": "2018-03-01",
-      "summary": "Leading a team of React Web Developers and ensuring development practices and processes are efficient.  Technologies: - ReactJS - Redux - SASS - Jest - Reselect - Enzyme - StoryBook - Lerna - Webpack - Rollup",
-      "highlights": [],
-      "endDate": "2018-08-01"
-    },
-    {
-      "company": "Open Source",
-      "position": "Open Source Developer",
-      "website": "",
-      "startDate": "2018-01-01",
-      "summary": "Maintainer of several open source projects and also a contributor on many projects from well know organizations, like ReactJS and GatsbyJS.  For more information, please check my Github profile.",
-      "highlights": []
-    },
-    {
-      "company": "intive-FDV",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2016-08-01",
-      "summary": "Building high scalable React/Redux applications. Embracing continuous improvement of the stack and Testing as a main practice. Working within the customers and using Scrum on a daily basis. The project is a suite of 12 products built upon an SPA.  Technologies used: - ReactJS - Redux - SASS - Jest - Reselect - Immutable JS - Enzyme - StoryBook - Webpack",
-      "highlights": [],
-      "endDate": "2018-03-01"
-    },
-    {
-      "company": "Globant",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-10-01",
-      "summary": ".Net C#, Angular JS, Entity Framework, MVC, WEB API",
-      "highlights": [],
-      "endDate": "2016-08-01"
-    },
-    {
-      "company": "Qservices",
-      "position": "Sofware Developer",
-      "website": "",
-      "startDate": "2014-08-01",
-      "summary": "ASP .NET C#, Jquery, Bootrstap, SQL",
-      "highlights": [],
-      "endDate": "2015-10-01"
     }
   ],
   "education": [
     {
-      "institution": "Universidad Nacional de La Matanza",
+      "institution": "The Uni",
       "area": "",
       "studyType": "Engineer's degree",
       "startDate": "2011-01-01",
       "gpa": "",
       "courses": [],
       "endDate": "2017-01-01"
-    },
-    {
-      "institution": "ITI San Judas Tadeo",
-      "area": "",
-      "studyType": "IT technician",
-      "startDate": "2009-01-01",
-      "gpa": "",
-      "courses": [],
-      "endDate": "2011-01-01"
     }
   ],
   "skills": [
@@ -114,115 +52,15 @@
       "name": "React Native",
       "level": "",
       "keywords": []
-    },
-    {
-      "name": "Scrum",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Unit Testing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "SQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C#",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "HTML",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MySQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "CSS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Git",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "SASS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Github",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Redux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Webpack",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Functional Programming",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Integration Testing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "End-to-end Testing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Gatsby",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "GraphQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "TypeScript",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Jest",
-      "level": "",
-      "keywords": []
     }
   ],
   "languages": [
     {
-      "language": "Español",
+      "language": "Spanish",
       "fluency": "Native or bilingual proficiency"
     },
     {
-      "language": "Inglés",
+      "language": "English",
       "fluency": "Full professional proficiency"
     }
   ],
@@ -232,19 +70,6 @@
       "startDate": "2018-08-01",
       "summary": "A portfolio starter for Gatsby integrated with Contentful CMS.  Technologies used: - Gatsby - Rebass - React Reveal - Dynamic content from Contentful - Offline support - PWA with Gatsby - Netlify Deployment Friendly - Medium integration - Social sharing (Twitter, Facebook, Google, LinkedIn) - Google Analytics",
       "url": "https://github.com/EmaSuriano/gatsby-starter-mate"
-    },
-    {
-      "name": "react-hotkey-tooltip",
-      "startDate": "2018-03-01",
-      "summary": "A global Hotkey provider with built in tooltip for React.  Why mess up with document.addEventListener or positioning/styling tooltips if there are a lot of open source libraries that can do that for me. These are the chosen ones! - mousetrap: to bind and unbind hotkeys globally 🌐 - react-tippy: to display beautiful tooltips 😄",
-      "url": "https://github.com/EmaSuriano/react-hotkey-tooltip"
-    },
-    {
-      "name": "Blindle",
-      "startDate": "2017-03-01",
-      "summary": "Open source device that teaches you Braille, driven by the need in the device market for blind people.  What did we implement in order to accomplish this? - Raspberry pi, code written in python - Arduino board, code written in Arduino - 3D models, made with Inventor and Tinkercad - Electronic Board, designed with kiCad - Box, which works as container of all the components",
-      "url": "http://blindle.github.io",
-      "endDate": "2017-10-01"
     }
   ]
 }
