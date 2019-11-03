@@ -1,11 +1,12 @@
 ## Roadmap
 
-- Finish example
-- Write down documentation
-- Move typescript dependency to devDependency
-- Publish package
-- Test it in another starter
-- Fix issue with the nodeEngine
+- [ ] Finish example
+- [ ] Deploy site with Netlify
+- [ ] Write down documentation
+- [ ] Move typescript dependency to devDependency
+- [ ] Publish package
+- [ ] Test it in another starter
+- [ ] Fix issue with the nodeEngine
 
 <p align="center">
   <a href="https://www.gatsbyjs.org">
