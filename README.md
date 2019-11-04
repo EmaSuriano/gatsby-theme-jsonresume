@@ -11,7 +11,7 @@
   A wrapper of <a href="https://jsonresume.org/">JSONResume</a> as a <a href="https://www.gatsbyjs.org">Gatsby Theme</a>
 </h2>
 
-#### [Live Example](sad-neumann-882ab2.netlify.com)
+### [Live Example](https://sad-neumann-882ab2.netlify.com/)
 
 ## Installation
 
