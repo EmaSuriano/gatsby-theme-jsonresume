@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-and-serve": "yarn workspace example build && yarn workspace example serve"
+    "build-and-serve": "yarn workspace example build && yarn workspace example serve",
+    "test": "yarn workspace example build && yarn workspace example test"
   },
   "workspaces": [
     "gatsby-theme-jsonresume",

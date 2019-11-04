@@ -7,13 +7,21 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest"
   },
   "dependencies": {
     "gatsby": "^2.17.6",
     "gatsby-theme-jsonresume": "^1.0.0",
+    "jest": "^24.9.0",
     "jsonresume-theme-orbit": "^1.0.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.cache/"
+    ]
   }
 }
