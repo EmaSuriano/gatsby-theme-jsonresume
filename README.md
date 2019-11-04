@@ -65,9 +65,9 @@ info gatsby serve running at: http://localhost:9000/
 
 #### Using a different theme
 
-In case you want to change how your CV looks, JSONResume has a huge community of people who built a large collection of themes. All of them are Open Source and you can find them inside [`npm`](https://www.npmjs.com/search?q=jsonresume-theme-*).
+In case you want to change how your CV looks, JSONResume does a very good jobs regarding theming. Check the official documentation for more information --> [JSONResume themes](https://jsonresume.org/themes/).
 
-To use a different theme you need to first install inside your project, and then send only the name of the theme (not the whole name of the library).
+To use a different theme you need to first install it inside your project, and then send only the name of the theme (not the whole name of the library) as an option of the theme inside your `gatsby-config`.
 
 **Example:**
 
