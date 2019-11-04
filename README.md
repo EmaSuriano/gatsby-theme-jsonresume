@@ -124,7 +124,8 @@ In order to start, you need to install the dependencies in the root which will i
 
 Available scripts:
 
-- `build-and-serve`: Build the demo project and host it in localhost
+- `start`: Build the demo project and host it in localhost.
+- `test`: Build the demo project and run tests.
 
 ## Contributing
 
