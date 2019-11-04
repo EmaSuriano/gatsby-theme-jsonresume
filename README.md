@@ -111,7 +111,7 @@ module.exports = {
 
 ## Development
 
-This repository is using Yarn Workspace. The structure of it is the following:
+This repository is using [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/). The structure is the following:
 
 - `/example`: Demo project which shows how to use the theme.
 - `/gatsby-theme-jsonresume`: the theme itself.
@@ -119,7 +119,7 @@ This repository is using Yarn Workspace. The structure of it is the following:
 In order to start, you need to install the dependencies in the root which will install the dependencies for both folders and link the projects.
 
 ```bash
-> yarn --ignore-engines
+> yarn --ignore-engines # resume-cli is hard coding the node engine, this is only needed when developing locally
 ```
 
 Available scripts:
