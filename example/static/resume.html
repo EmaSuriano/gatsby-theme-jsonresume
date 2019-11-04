@@ -1,570 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Emanuel Suriano</title>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <style>body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:#fafafa;
+	<head>
+        <title>Emanuel Suriano</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Responsive HTML5 Developer Resume for Emanuel Suriano">
+        <meta name="generator" content="https://www.npmjs.com/package/jsonresume-theme-orbit/v/1.0.3"/>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- Global CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">        <!-- Plugins CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Theme CSS -->
+        <style>
+                /*   
+ * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/* styles.css */
+/* ======= Base ======= */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.note {
-  display:block;
-  position: absolute;
-  top:10px;
-  left:10px;
-
-  font-family: "Open Sans";
-  font-size: 0.6em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
-
-.new {
-  background-color: #81C784;
-
-  border: 1px solid #757575;
-  padding: 1px;
-  border-radius: 4px;
-
+a {
+  color: #2d7788;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
-
-/* Header */
-
-header {
-  width:100%;
-  vertical-align: middle;
-  text-align: center;
- 
+a:hover {
+  text-decoration: underline;
+  color: #1a454f;
 }
-
-.header-content {
-  display: inline-block;
-}
-
-.pic {
-  margin: 0 auto;
-  margin-top:-2.5em;
-  
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  
-  border: 2px solid #e0e0e0;
-  transition : all 0.5s linear;
-  
-}
-
-@-webkit-keyframes wiggle {
-  0%   {
-    transform: rotate(0deg);
-  }
-  25%  {
-    transform: rotate(-30deg);
-  }
-  50%  {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.pic:hover {
-  /*Webkit fix*/
-  -webkit-transform: translateZ(0);
-  
-  cursor:pointer;
-  
-  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
-}
-
-header p {
-  text-align:center;
-  font-family: "Merriweather";
-  
-  margin:0;
-  
-  color: #212121;
-}
-
-.first-name {
-   font-size: 1.05em;
-}
-
-.subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
-  font-weight:500;
-  color: #424242;
-}
-
-/* Information */
-
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
-  background-color:white;
-  width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
-  border-top: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 3px solid #e0e0e0;
-  border-radius:3px;
-}
-
-@media(max-width:992px) {
-  .paper {
-    width:80%;
-  }
-}
-
-/* Content Part */
-
-.content-wrapper {
-  padding-right:7.25%;
-}
-
-.content {
-  display:table;
-  width:100%;
-  
-  padding-top:1.5em;
-  
-  /*border-top: 1px solid #eeeeee;*/
-}
-
-.content:last-child {
-  margin-bottom: 2em;
-}
-
-body > div > article > div > section:last-child {
-  padding-bottom:1.5em;
-}
-
-.row {
-    display:table-row;
-}
-.row div {
-    display:table-cell;
-}
-
-.content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size:0.975em;
-  
-  text-align:center;
-  vertical-align:middle;
-
-  padding-left:6.66%;
-  width:30%;
-}
-
-.content-cat p {
-  font-size:0.55em;
-  font-weight:600;
-  
-  margin-bottom:0;
-}
-
-.content-text {
-  border-left:1px solid #e0e0e0;
-  transition: border 0.66s ease-in;
-}
-
-.big-text {
-  vertical-align:top;
-}
-
-.content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  
-  width:85%;
-  margin-left:1.5em;
-}
-
-.content-text ul:last-child {
-  margin-bottom:0.5em;
-}
-
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  display:inline-block;
-  
-}
-
-.content-text ul li:first-child {
-  width:35%;
-  
-  color: #424242;
-  
-  font-weight:600;
-}
-
-.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+a:focus {
   text-decoration: none;
-  color: #0277bd;
 }
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
+p {
+  line-height: 1.5;
 }
-
-.work-listing p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  color: #424242;
-  
-  margin-left:2em;
-  margin-top:0.45em;
-  margin-bottom: 0.45em;
+.wrapper {
+  background: #42A8C0;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-div.content-text.work-listing.education-listing > p:nth-child(2) {
-  margin-top:0.25em;
+.sidebar-wrapper {
+  background: #42A8C0;
+  position: absolute;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
 }
-
-.work-listing .highlight {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-  
-  color: #424242;
-  
-  margin-left:3.25em;
-  padding-left:0.5em;
-  
-  border-left:1px solid #e0e0e0;
-  
+.sidebar-wrapper a {
+  color: #fff;
 }
-
-.education-listing > .heading {
-  font-weight:600;
-  
-  margin-top:0.75em;
-  margin-left:2em;
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
 }
-
-.education-listing > .highlight {
-  margin-left:3.25em;
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
-.highlight {
-  transition: border .33s ease-in;
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-.profiles-listing ul li, .profiles-listing ul li:first-child {
-  width:32%;
-  font-weight: normal;
+.sidebar-wrapper .profile {
+  margin-bottom: 15px;
 }
-
-.work-content, .education-content {
-  padding-top: .75em;
+.sidebar-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
 }
-
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
 }
-
-div.content-text.skills-listing > p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-
-  margin-left: 2em;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
 }
-
-div.content-text.skills-listing > p > {
-  color:#212121;
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 14px;
 }
-
-@media screen and (max-width: 600px) {
-  body, html {
-    padding-top: 30px;
+.sidebar-wrapper .container-block {
+  padding: 30px;
+}
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 300px;
+  min-height: 800px;
+}
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-wrapper .section-title .fa {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2d7788;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.main-wrapper .section {
+  margin-bottom: 60px;
+}
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5;
+}
+.skillset .level-bar-inner {
+  height: 12px;
+  background: #7bc2d3;
+}
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+.footer .fa-heart {
+  color: #fb866a;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
   }
-
-  .paper {
-    width:95%;
+  .main-wrapper {
+    padding: 30px;
   }
-
-  .row div {
+  .main-wrapper .time {
+    position: static;
     display: block;
+    margin-top: 5px;
   }
-
-  .content-cat {
-    width: 100%;
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
   }
-
-  .content-text ul li {
-    width: 100%;
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
   }
-
-  .content-text ul li:first-child {
-    width: 100%;
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
   }
-  
-  .education-listing > .highlight {
-    margin-left: 30px;
-  }
-}</style>
-  <style media="print">
-body, html {
-  background-color: white;
-  padding-top: 1.5em;
 }
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
 
-.paper {
-  width:100%;
-  border: 0;
+        </style>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-  padding-top: 0;
-}
+    <body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
 
-header p {
-  font-size: 1.3em;
-}
-
-.subtitle {
-  font-size: 0.7em;
-}
-
-.header-pic {
-  float:left;
-}
-
-.profiles {
-  display:none;
-}
-
-.content {
-  page-break-inside:avoid; 
-  page-break-after:auto;
-}
-
-.header-text {
-  float:left;
-  margin-top: -1.6em;
-}
-
-.content-wrapper > .content:first-child {
-  padding-top: 2em;
-}
-
-.content:last-child {
-  padding-bottom: 0;
-}
-
-.content-cat {
-  width:33%;
-  color:black;
-  text-align: left;
-}
-
-.content-cat p {
-  font-size:0.6em;
-  font-weight: 600;
-}
-
-header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-  color:black;
-}
-
-.content-text.skills-listing > ul > li span, .subtitle {
-  color:#212121;
-}
-
-.content-text ul:last-child {
-  margin-bottom: 0.25em;
-}
-
-.content-text ul li:first-child {
-  width:50%;
-}
-
-.profiles-listing ul li:first-child {
-  width:32%;
-}
-
-div.content-text.skills-listing > ul > li {
-  width:33%;
-}
-
-.work-listing p {
-  margin-bottom: 0.1em;
-}
-
-div.content-text.skills-listing > ul > li > p {
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
-}
-
-div.content-text.skills-listing > ul > li {
-  padding-left: 1.5em;
-}
-
-div.content-text.skills-listing > ul > li:first-child {
-  padding-left: 2em;
-}
-
-.note {
-  display:none;
-}
-
-.content-text:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.big-text {
-  padding-top: 0;
-}</style>
-</head>
-<body>
-  <div class="resume-wrapper">
-    <article class="paper">
-        <header>
-          <div class="header-content">
-            <div class="header-text">
-              <p>
-                Emanuel Suriano
-              </p>
-              <p class="subtitle">Just a developer looking to have a cool CV</p>
-            </div>
-          </div>
-        </header>
-        <div class="content-wrapper">
-          <!-- CONTACT -->
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Contact
-              </div>
-              <div class="content-text">
-                  <ul>
-                    <li>Email</li>
-                    <li>emanuel.suriano@gmail.com</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
-          <!-- LOCATION -->
+            <div class="profile-container">
+                <img class="profile" src="" alt="" />
+                <h1 class="name">Emanuel Suriano</h1>
+                <h3 class="tagline">Just a developer looking to have a cool CV</h3>
+            </div><!--//profile-container-->
         
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Work  Experience
-                          <p>2019-01-01 till today</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p style="margin-top:2.4em;">
-                            <strong>Develop - UI Platform</strong>
-                            at <strong>A:</strong>
-                        </p>
-                        <p>Developer of a great team!</p>
-                    </div>
-                  </div>
-                </section>
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:emanuel.suriano@gmail.com">emanuel.suriano@gmail.com</a></li>
+                    
+                    
+        
+                    <!--                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>  -->
+                </ul>
+            </div><!--//contact-container-->
+        
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                    <div class="item">
+                        <h4 class="degree">Engineer&#x27;s degree in </h4>
+                        <h5 class="meta">The Uni</h5>
+                        <div class="time">2011 - 2017</div>
+                    </div><!--//item-->
+            </div><!--//education-container-->
+        
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                        <li>Spanish <span class="lang-desc">(Native or bilingual proficiency)</span></li>
+                        <li>English <span class="lang-desc">(Full professional proficiency)</span></li>
+                </ul>
+            </div><!--//interests-->
+        
 
+        </div><!--//sidebar-wrapper-->
 
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Education
-                          <p>2011-01-01 till 2017-01-01</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p class="heading" style="margin-top:2.35em;">The Uni</p>
-                    </div>
-                  </div>
-                </section>
+        <div class="main-wrapper">
 
-
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Skills
-              </div>
-              <div class="content-text skills-listing">
-                  <p>
-                    <span class="name">
-                        <strong>
-                          React.js:
-                        </strong>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="name">
-                        <strong>
-                          JavaScript:
-                        </strong>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="name">
-                        <strong>
-                          React Native:
-                        </strong>
-                    </span>
-                  </p>
-              </div>
-            </div>
-          </section>
-
-  <!-- LANGUAGE -->
-            <section class="content">
-              <div class="row">
-                <div class="content-cat">
-                  Languages
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i>Personal Summary</h2>
+                <div class="summary">
+                    <p>Internet</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+        
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Work Experience</h2>
+        
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Develop - UI Platform</h3>
+                                <div class="time">2019 - Present</div>
+                            </div><!--//upper-row-->
+                            <div class="company">A</div>
+                        </div><!--//meta-->
+                        <div class="details">
+                            Developer of a great team!
+                        </div><!--//details-->
+                    </div><!--//item-->
+            </section><!--//section-->
+        
+        
+        
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <!--                    <div class="intro">
+                                        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                                    </div>--><!--//intro-->
+                    <div class="item">
+                        <span class="project-title"><a href="https://github.com/EmaSuriano/gatsby-starter-mate" target="_blank">Gatsby Starter Mate</a></span> -
+                        <span class="project-tagline"></span>
+                    </div><!--//item-->
+            </section><!--//section-->
+        
+        
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">
+                        <div class="item">
+                            <h3 class="level-title">React.js</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="NaN%">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="level-title">JavaScript</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="NaN%">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="level-title">React Native</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="NaN%">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div><!--//item-->
+        
                 </div>
-                <div class="content-text">
-                    <ul>
-                        <li>Spanish</li>
-                        <li>Native or bilingual proficiency</li>
-                    </ul>
-                    <ul>
-                        <li>English</li>
-                        <li>Full professional proficiency</li>
-                    </ul>
-                </div>
-              </div>
-            </section>
-            <!-- PROFILES -->
+            </section><!--//skills-section-->
+
+        </div><!--//main-body-->
+    </div>
+
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script type="text/javascript">
+            jQuery(document).ready(function($) {
 
 
-        </div>
-    </article>
-  </div>
-</body>
+    /*======= Skillset *=======*/
+    
+    
+    $('.level-bar-inner').css('width', '0');
+    
+    $('.level-bar-inner').each(function() {
+
+        var itemWidth = $(this).data('level');
+
+        $(this).animate({
+            width: itemWidth
+        }, 800);
+
+    });
+
+    
+
+});
+    </script>
+    </body>
 </html>

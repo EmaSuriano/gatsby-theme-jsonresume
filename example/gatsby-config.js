@@ -3,8 +3,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-jsonresume`,
       options: {
-        resume: require('./resume.json'),
-        theme: 'paper',
+        resumeJson: require('./resume.json'),
+        theme: 'orbit',
       },
     },
   ],
