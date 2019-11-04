@@ -18,7 +18,7 @@
 This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it.
 
 ```bash
-yarn add gatsby-theme-jsonresume
+> yarn add gatsby-theme-jsonresume
 ```
 
 ## Usage
@@ -72,7 +72,7 @@ To use a different theme you need to first install inside your project, and then
 **Example:**
 
 ```bash
-yarn add jsonresume-theme-orbit
+> yarn add jsonresume-theme-orbit
 ```
 
 ```javascript
@@ -108,6 +108,23 @@ module.exports = {
   ],
 };
 ```
+
+## Development
+
+This repository is using Yarn Workspace. The structure of it is the following:
+
+- `/example`: Demo project which shows how to use the theme.
+- `/gatsby-theme-jsonresume`: the theme itself.
+
+In order to start, you need to install the dependencies in the root which will install the dependencies for both folders and link the projects.
+
+```bash
+> yarn --ignore-engines
+```
+
+Available scripts:
+
+- `build-and-serve`: Build the demo project and host it in localhost
 
 ## Contributing
 
