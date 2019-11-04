@@ -23,7 +23,7 @@ const moveToStatic = file => {
 /**
  * @param {Object} _
  * @param {Object} themeOptions - Theme configuration
- * @param {Object} themeOptions.resumeJson - Data for resume
+ * @param {Object} themeOptions.resumeJson - Data of your resume
  * @param {string} themeOptions.theme - Theme to be used in JSONResume
  * @param {string} themeOptions.name - Name/Route for the resulting CV
  */
