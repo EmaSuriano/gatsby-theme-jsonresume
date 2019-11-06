@@ -4,7 +4,14 @@ module.exports = {
       resolve: `gatsby-theme-jsonresume`,
       options: {
         resumeJson: require('./resume.json'),
-        theme: 'orbit',
+      },
+    },
+    {
+      resolve: `gatsby-theme-jsonresume`,
+      options: {
+        resumeJson: require('./resume.json'),
+        name: 'resume-custom-theme',
+        theme: 'mantra',
       },
     },
   ],

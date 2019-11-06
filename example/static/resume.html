@@ -1,470 +1,505 @@
 <!doctype html>
 <html>
 	<head>
-        <title>Emanuel Suriano</title>
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Responsive HTML5 Developer Resume for Emanuel Suriano">
-        <meta name="generator" content="https://www.npmjs.com/package/jsonresume-theme-orbit/v/1.0.3"/>
-
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <!-- Global CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">        <!-- Plugins CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-        <!-- Theme CSS -->
-        <style>
-                /*   
- * Template Name: Orbit - Responsive Resume/CV Template for Developers
- * Version: 1.0
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
-*/
-/* styles.css */
-/* ======= Base ======= */
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>test</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #545E6C;
-  background: #f5f5f5;
-  font-size: 14px;
-  padding: 30px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
 }
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+h4 {
+	margin-top: 0
 }
-a {
-  color: #2d7788;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+section {
+	margin-top: 30px;
 }
-a:hover {
-  text-decoration: underline;
-  color: #1a454f;
+li {
+	line-height: 1.8;
+	list-style: none;
 }
-a:focus {
-  text-decoration: none;
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
 }
-p {
-  line-height: 1.5;
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
 }
-.wrapper {
-  background: #42A8C0;
-  max-width: 960px;
-  margin: 0 auto;
-  position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
 }
-.sidebar-wrapper {
-  background: #42A8C0;
-  position: absolute;
-  right: 0;
-  width: 240px;
-  height: 100%;
-  min-height: 800px;
-  color: #fff;
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
 }
-.sidebar-wrapper a {
-  color: #fff;
+.container {
+	max-width: 750px;
+	padding: 0 30px;
 }
-.sidebar-wrapper .profile-container {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  color: #fff;
+.col-sm-6 {
+	margin-bottom: 10px;
 }
-.sidebar-wrapper .name {
-  font-size: 32px;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 10px;
+.col-sm-12 h4 {
+	margin-top: 12px; 
 }
-.sidebar-wrapper .tagline {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
 }
-.sidebar-wrapper .profile {
-  margin-bottom: 15px;
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
 }
-.sidebar-wrapper .contact-list .fa {
-  margin-right: 5px;
-  font-size: 18px;
-  vertical-align: middle;
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
 }
-.sidebar-wrapper .contact-list li {
-  margin-bottom: 15px;
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
 }
-.sidebar-wrapper .contact-list li:last-child {
-  margin-bottom: 0;
+#content aside {
+	text-align: right;
+	padding-right: 30px;
 }
-.sidebar-wrapper .contact-list .email .fa {
-  font-size: 14px;
+#profiles .network {
+	text-transform: capitalize;
 }
-.sidebar-wrapper .container-block {
-  padding: 30px;
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
 }
-.sidebar-wrapper .container-block-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 15px;
+#education .area {
+	font-weight: bold;
 }
-.sidebar-wrapper .degree {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 5px;
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
 }
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 15px;
+#education .studyType {
+	margin-left: 25px;
 }
-.sidebar-wrapper .education-container .item:last-child {
-  margin-bottom: 0;
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
 }
-.sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-  margin-top: 0;
+#publications .website a:before {
+	content: attr(href);
 }
-.sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-.sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
-}
-.sidebar-wrapper .languages-list {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .languages-list li {
-  margin-bottom: 10px;
-}
-.sidebar-wrapper .languages-list li:last-child {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .interests-list {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .interests-list li {
-  margin-bottom: 10px;
-}
-.sidebar-wrapper .interests-list li:last-child {
-  margin-bottom: 0;
-}
-.main-wrapper {
-  background: #fff;
-  padding: 60px;
-  padding-right: 300px;
-  min-height: 800px;
-}
-.main-wrapper .section-title {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 500;
-  color: #2d7788;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.main-wrapper .section-title .fa {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
-  display: inline-block;
-  color: #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #2d7788;
-  text-align: center;
-  padding-top: 8px;
-  font-size: 16px;
-  position: relative;
-  top: -2px;
-}
-.main-wrapper .section {
-  margin-bottom: 60px;
-}
-.main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
-}
-.main-wrapper .upper-row {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 2px;
-}
-.main-wrapper .job-title {
-  color: #3F4650;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-.main-wrapper .time {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #97AAC3;
-}
-.main-wrapper .company {
-  margin-bottom: 10px;
-  color: #97AAC3;
-}
-.main-wrapper .project-title {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.main-wrapper .projects-section .intro {
-  margin-bottom: 30px;
-}
-.main-wrapper .projects-section .item {
-  margin-bottom: 15px;
-}
-.skillset .item {
-  margin-bottom: 15px;
-  overflow: hidden;
-}
-.skillset .level-title {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-.skillset .level-bar {
-  height: 12px;
-  background: #f5f5f5;
-}
-.skillset .level-bar-inner {
-  height: 12px;
-  background: #7bc2d3;
-}
-.footer {
-  padding: 30px;
-  padding-top: 60px;
-}
-.footer .copyright {
-  line-height: 1.6;
-  color: #545E6C;
-  font-size: 13px;
-}
-.footer .fa-heart {
-  color: #fb866a;
-}
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  .sidebar-wrapper {
-    position: static;
-    width: inherit;
-  }
-  .main-wrapper {
-    padding: 30px;
-  }
-  .main-wrapper .time {
-    position: static;
-    display: block;
-    margin-top: 5px;
-  }
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
-  }
-}
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .skillset .level-title {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    margin-bottom: 0;
-  }
-  .skillset .level-bar {
-    display: inline-block;
-    width: 70%;
-    float: left;
-    position: relative;
-    top: 1px;
-  }
-}
-/* Large devices (large desktops, 1200px and up) */
-/* Ex-Large devices (large desktops, 1200px and up) */
 
-        </style>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
 
-    <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						test
+					</h1>
+					<h2>
+						Programmer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
 
-            <div class="profile-container">
-                <img class="profile" src="" alt="" />
-                <h1 class="name">Emanuel Suriano</h1>
-                <h3 class="tagline">Just a developer looking to have a cool CV</h3>
-            </div><!--//profile-container-->
-        
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:emanuel.suriano@gmail.com">emanuel.suriano@gmail.com</a></li>
-                    
-                    
-        
-                    <!--                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>  -->
-                </ul>
-            </div><!--//contact-container-->
-        
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                    <div class="item">
-                        <h4 class="degree">Engineer&#x27;s degree in </h4>
-                        <h5 class="meta">The Uni</h5>
-                        <div class="time">2011 - 2017</div>
-                    </div><!--//item-->
-            </div><!--//education-container-->
-        
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                        <li>Spanish <span class="lang-desc">(Native or bilingual proficiency)</span></li>
-                        <li>English <span class="lang-desc">(Full professional proficiency)</span></li>
-                </ul>
-            </div><!--//interests-->
-        
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">test4@test.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(912) 555-4321</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://richardhendricks.com">http://richardhendricks.com</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+							neutralthoughts
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						SoundCloud
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        </div><!--//sidebar-wrapper-->
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Pied Piper</span>
+					<span class="date">
+						2013-12-01 — 2014-12-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://piedpiper.com">http://piedpiper.com</a>
+				</div>
+				<div class="position">
+					CEO/President
+				</div>
+				<div class="summary">
+					<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+					<li class="bullet">Successfully won Techcrunch Disrupt</li>
+					<li class="bullet">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-        <div class="main-wrapper">
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>CoderDojo</span>
+					<span class="date">
+						2012-01-01 — 2013-01-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://coderdojo.com/">http://coderdojo.com/</a>
+				</div>
+				<div class="position">
+					Teacher
+				</div>
+				<div class="summary">
+					<p>Global movement of free coding clubs for young people.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Awarded &#x27;Teacher of the Month&#x27;</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>University of Oklahoma</span>
+					<span class="date">
+						2011-06-01 — 2014-01-01
+					</span>
+				</h4>
+				<div class="area">
+					Information Technology
+				</div>
+				<div class="studyType">
+					Bachelor
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>DB1101 - Basic SQL</li>
+					<li>CS2011 - Java Introduction</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Digital Compression Pioneer Award</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2014-11-01
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Techcrunch</strong>
+				</div>
+				<div class="summary">
+					There is no spoon.
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Video compression for 3d media</span>
+					<span class="date">
+						2014-10-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>Hooli</strong>
+				</div>
+				<div class="summary">
+					<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Compression</h4>
+				</div>
+				<ul class="keywords">
+					<li>Mpeg</li>
+					<li>MP4</li>
+					<li>GIF</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Personal Summary</h2>
-                <div class="summary">
-                    <p>Internet</p>
-                </div><!--//summary-->
-            </section><!--//section-->
-        
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Work Experience</h2>
-        
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Develop - UI Platform</h3>
-                                <div class="time">2019 - Present</div>
-                            </div><!--//upper-row-->
-                            <div class="company">A</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            Developer of a great team!
-                        </div><!--//details-->
-                    </div><!--//item-->
-            </section><!--//section-->
-        
-        
-        
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-                <!--                    <div class="intro">
-                                        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                                    </div>--><!--//intro-->
-                    <div class="item">
-                        <span class="project-title"><a href="https://github.com/EmaSuriano/gatsby-starter-mate" target="_blank">Gatsby Starter Mate</a></span> -
-                        <span class="project-tagline"></span>
-                    </div><!--//item-->
-            </section><!--//section-->
-        
-        
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-                <div class="skillset">
-                        <div class="item">
-                            <h3 class="level-title">React.js</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="NaN%">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="level-title">JavaScript</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="NaN%">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="level-title">React Native</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="NaN%">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div><!--//item-->
-        
-                </div>
-            </section><!--//skills-section-->
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
-        </div><!--//main-body-->
-    </div>
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Wildlife</h4>
+				</div>
+				<ul class="keywords">
+					<li>Ferrets</li>
+					<li>Unicorns</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="references" class="row">
+		<aside class="col-sm-3">
+			<h3>References</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
+					<p class="name">
+						<strong>— Erlich Bachman</strong>
+					</p>
+				</blockquote>
+			</div>
+			</div>
+		</div>
+	</section>
 
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- custom js -->
-    <script type="text/javascript">
-            jQuery(document).ready(function($) {
-
-
-    /*======= Skillset *=======*/
-    
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    $('.level-bar-inner').each(function() {
-
-        var itemWidth = $(this).data('level');
-
-        $(this).animate({
-            width: itemWidth
-        }, 800);
-
-    });
-
-    
-
-});
-    </script>
-    </body>
+	</div>
+	
+	</body>
 </html>
