@@ -3,6 +3,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5f3d0f3-3897-44ca-8956-01ca42e9df70/deploy-status)](https://app.netlify.com/sites/sad-neumann-882ab2/deploys)
 
 <p align="center">
+  <a href="https://github.com/jsonresume">
+    <img alt="JSON Resume" src="https://avatars3.githubusercontent.com/u/7943272?s=200&v=4" width="60" />
+  </a>
+  <img src="https://image.flaticon.com/icons/svg/148/148836.svg" alt="Heart" width="30" />
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
