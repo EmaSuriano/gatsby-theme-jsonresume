@@ -7,8 +7,12 @@ export default () => (
   <Grommet theme={theme} full>
     <Box pad="large" flex={1}>
       <Heading level="1">Gatsby-theme-JSONResume</Heading>
-
-      <Heading level="2">Base Theme</Heading>
+      <Heading level="2">
+        <Anchor href="https://www.gatsbyjs.org">Gatsby Theme</Anchor> with{' '}
+        <Anchor href="https://jsonresume.org/">JSONResume</Anchor> to generate
+        your Resume and add a new Route into your Application ✨
+      </Heading>
+      <Heading level="3">Base Theme</Heading>
       <ul>
         <li>
           <Anchor href="/resume.html" label="Online" size="large" />
@@ -18,7 +22,7 @@ export default () => (
         </li>
       </ul>
 
-      <Heading level="2">Custom Theme</Heading>
+      <Heading level="3">Custom Theme</Heading>
       <ul>
         <li>
           <Anchor

@@ -11,27 +11,18 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<h2 align="center">
-  A wrapper of <a href="https://jsonresume.org/">JSONResume</a> as a <a href="https://www.gatsbyjs.org">Gatsby Theme</a>
-</h2>
+
+> A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to generate your Resume and add a new Route into your Application ✨
 
 ### [Live Example](https://sad-neumann-882ab2.netlify.com/)
 
 ## Installation
 
-This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it.
+This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it. You can check the [official documentation](https://www.gatsbyjs.org/docs/quick-start/) to bootstrap a Gatsby project.
 
 ```bash
 > yarn add gatsby-theme-jsonresume
 ```
-
-## Usage
-
-To generate your resume your need to provide a valid `JSON` object with the information of you. You can find more information about the schema in this [link](https://jsonresume.org/schema/).
-
-I highly recommend using [LinkedIn to Json Resume](https://jmperezperez.com/linkedin-to-json-resume/) that can generate a valid `JSON` schema from your LinkedIn information.
-
-Once you have your data with the correct structure, you need to add the plugin to your Gatsby site.
 
 ```javascript
 // gatsby-config.js
@@ -40,12 +31,18 @@ module.exports = {
     {
       resolve: `gatsby-theme-jsonresume`,
       options: {
-        resumeJson: require('./resume.json'),
+        resumeJson: { // ...JSON Resume Schema }
       },
     },
   ],
 };
 ```
+
+## Usage
+
+To generate your resume your need to provide a valid `JSON` object with your information. You can find more information about the schema in this [link](https://jsonresume.org/schema/).
+
+I highly recommend using [LinkedIn to JSON Resume](https://jmperezperez.com/linkedin-to-json-resume/) that can generate a valid `JSON` schema from your LinkedIn information.
 
 The way this theme adds a new route in your application is by generating a plain `html` file, as well as the `pdf` file, and placing them inside the `static` folder.
 
@@ -59,7 +56,7 @@ The last step is then to build and serve your serve. At this point, you should b
 info gatsby serve running at: http://localhost:9000/
 ```
 
-### Theme Options
+### Usage
 
 | Name         | Description                     | Required | Default Value |
 | ------------ | ------------------------------- | -------- | ------------- |
@@ -69,7 +66,7 @@ info gatsby serve running at: http://localhost:9000/
 
 #### Using a different theme
 
-In case you want to change how your CV looks, JSONResume does a very good jobs regarding theming. Check the official documentation for more information --> [JSONResume themes](https://jsonresume.org/themes/).
+In case you want to change how your CV looks, JSONResume does a very good jobs regarding theming. Check the official documentation for more information: [JSONResume themes](https://jsonresume.org/themes/).
 
 To use a different theme you need to first install it inside your project, and then send only the name of the theme (not the whole name of the library) as an option of the theme inside your `gatsby-config`.
 
@@ -86,7 +83,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-jsonresume`,
       options: {
-        resumeJson: require('./resume.json'),
+        resumeJson: { // ...JSON Resume Schema },
         theme: 'orbit',
       },
     },
@@ -105,7 +102,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-jsonresume`,
       options: {
-        resumeJson: require('./resume.json'),
+        resumeJson: { // ...JSON Resume Schema },
         name: 'cv',
       },
     },
