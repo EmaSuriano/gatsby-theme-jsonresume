@@ -11,7 +11,7 @@ module.exports = {
       options: {
         resumeJson: require('./resume.json'),
         name: 'resume-custom-theme',
-        theme: 'mantra',
+        theme: 'standard-resume',
       },
     },
   ],

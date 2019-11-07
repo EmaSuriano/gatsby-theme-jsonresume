@@ -15,7 +15,7 @@
     "gatsby-theme-jsonresume": "^1.0.2",
     "grommet": "^2.7.11",
     "jest": "^24.9.0",
-    "jsonresume-theme-mantra": "^0.2.0",
+    "jsonresume-theme-standard-resume": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-github-corner": "^2.3.0",
