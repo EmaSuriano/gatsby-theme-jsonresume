@@ -13,7 +13,7 @@
   "dependencies": {
     "gatsby": "^2.18.13",
     "gatsby-theme-jsonresume": "^1.0.2",
-    "grommet": "^2.7.11",
+    "grommet": "^2.9.0",
     "jest": "^24.9.0",
     "jsonresume-theme-standard-resume": "^1.0.3",
     "react": "^16.12.0",
