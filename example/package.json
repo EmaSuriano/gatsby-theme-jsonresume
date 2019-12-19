@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "gatsby": "^2.18.13",
+    "gatsby": "^2.18.14",
     "gatsby-theme-jsonresume": "^1.0.2",
     "grommet": "^2.9.0",
     "jest": "^24.9.0",
