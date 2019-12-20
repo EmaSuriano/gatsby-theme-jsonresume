@@ -1,47 +1,82 @@
 import React from 'react';
 import { grommet as theme, base } from 'grommet/themes';
-import { Box, Heading, Grommet, Anchor, Paragraph } from 'grommet';
+import { Heading, Grommet, Anchor, Paragraph } from 'grommet';
 import GithubCorner from 'react-github-corner';
+import jsonResume from '../../resume.json';
+import { Flex, Box } from 'reflexbox';
+import ReactJson from 'react-json-view';
+import Html from '../assets/html.svg';
+import Pdf from '../assets/pdf.svg';
+
+// use the component in your app!
+
+const Footer = () => (
+  <Box as="footer" style={{ position: 'absolute', bottom: 0, right: 0 }} mx="3">
+    <Paragraph>
+      Made with{' '}
+      <span role="img" aria-label="love">
+        ❤️
+      </span>{' '}
+      by{' '}
+      <Anchor href="https://github.com/EmaSuriano/" target="_blank">
+        EmaSuriano
+      </Anchor>
+    </Paragraph>
+  </Box>
+);
+
+console.log(jsonResume);
 
 export default () => (
   <Grommet theme={theme} full>
-    <Box pad="large" flex={1}>
+    <Box p="4" flex={1}>
       <Heading level="1">Gatsby-theme-JSONResume</Heading>
       <Heading level="2">
         <Anchor href="https://www.gatsbyjs.org">Gatsby Theme</Anchor> with{' '}
         <Anchor href="https://jsonresume.org/">JSONResume</Anchor> to generate
-        your Resume and add a new Route into your Application ✨
+        your Resume and add it into your Application{' '}
+        <span role="img" aria-label="spark">
+          ✨
+        </span>
       </Heading>
-      <Heading level="3">Base Theme</Heading>
-      <ul>
-        <li>
-          <Anchor href="/resume.html" label="Online" size="large" />
-        </li>
-        <li>
-          <Anchor href="/resume.pdf" label="PDF" size="large" />
-        </li>
-      </ul>
+      <Flex flexDirection={['column', 'row']}>
+        <Box width="500px">
+          <Heading level="3">
+            How does it work?{' '}
+            <span role="img" aria-label="thinking">
+              🤔
+            </span>
+          </Heading>
+          <Paragraph>
+            Provide a valid JSON structure and it will generate your resume in{' '}
+            <code>HTML</code> and <code>PDF</code> format.
+          </Paragraph>
+          <ReactJson src={jsonResume} collapsed={1} />
+        </Box>
 
-      <Heading level="3">Custom Theme</Heading>
-      <ul>
-        <li>
-          <Anchor
-            href="/resume-custom-theme.html"
-            label="Online"
-            size="large"
-          />
-        </li>
-        <li>
-          <Anchor href="/resume-custom-theme.pdf" label="PDF" size="large" />
-        </li>
-      </ul>
+        <Box>
+          <Heading level="3">Default Theme</Heading>
+          <Flex direction="row">
+            <Anchor href="/resume.html" target="_blank">
+              <Html width="100px" />
+            </Anchor>
+            <Anchor href="/resume.pdf" target="_blank">
+              <Pdf width="100px" />
+            </Anchor>
+          </Flex>
+          <Heading level="3">Custom Theme</Heading>
+          <Flex direction="row">
+            <Anchor href="/resume-custom-theme.html" target="_blank">
+              <Html width="100px" />
+            </Anchor>
+            <Anchor href="/resume-custom-theme.pdf" target="_blank">
+              <Pdf width="100px" />
+            </Anchor>
+          </Flex>
+        </Box>
+      </Flex>
     </Box>
-    <Box as="footer" style={{ position: 'absolute', bottom: 0 }} margin="large">
-      <Paragraph margin="none">
-        Made with ❤️ by <a href="https://github.com/EmaSuriano/">EmaSuriano</a>
-      </Paragraph>
-    </Box>
-
+    <Footer />
     <GithubCorner
       href="https://github.com/EmaSuriano/gatsby-theme-jsonresume"
       bannerColor={base.global.colors.brand}
