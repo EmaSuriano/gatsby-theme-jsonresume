@@ -2,9 +2,10 @@ import React from 'react';
 import { grommet as theme, base } from 'grommet/themes';
 import { Heading, Grommet, Anchor, Paragraph } from 'grommet';
 import GithubCorner from 'react-github-corner';
-import jsonResume from '../../resume.json';
 import { Flex, Box } from 'reflexbox';
+import { window, document } from 'browser-monads';
 import ReactJson from 'react-json-view';
+import jsonResume from '../../resume.json';
 import Html from '../assets/html.svg';
 import Pdf from '../assets/pdf.svg';
 
