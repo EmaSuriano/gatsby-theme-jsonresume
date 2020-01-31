@@ -40,6 +40,9 @@ export default () => (
       <Paragraph margin="none">
         Made with ❤️ by <a href="https://github.com/EmaSuriano/">EmaSuriano</a>
       </Paragraph>
+      <Paragraph margin="none">
+        Powered by <a href="https://www.netlify.com/">Netlify</a>.
+      </Paragraph>
     </Box>
 
     <GithubCorner
