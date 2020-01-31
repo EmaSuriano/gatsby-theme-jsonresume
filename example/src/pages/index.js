@@ -38,10 +38,8 @@ export default () => (
     </Box>
     <Box as="footer" style={{ position: 'absolute', bottom: 0 }} margin="large">
       <Paragraph margin="none">
-        Made with ❤️ by <a href="https://github.com/EmaSuriano/">EmaSuriano</a>
-      </Paragraph>
-      <Paragraph margin="none">
-        Powered by <a href="https://www.netlify.com/">Netlify</a>.
+        Powered by <a href="https://www.netlify.com/">Netlify</a>. Made with ❤️
+        by <a href="https://github.com/EmaSuriano/">EmaSuriano</a>.
       </Paragraph>
     </Box>
 
