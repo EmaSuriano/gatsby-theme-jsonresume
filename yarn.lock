@@ -5698,10 +5698,10 @@ grommet-styles@^0.2.0:
   resolved "https://registry.yarnpkg.com/grommet-styles/-/grommet-styles-0.2.0.tgz#b2eac2b7e2747cb523434d21728ce5234f8ce4f4"
   integrity sha512-0OMSYuGeyifYKpg4Gv2HzL8rUdd0ddnJ5LbCBKgDuloC71XIwr9g/Fxa6rs737MbPV7OZ4pEm4wvrjH4epzf1A==
 
-grommet@^2.11.1:
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.11.1.tgz#0993630eea35951da1800b730a99412e46950ec3"
-  integrity sha512-FyyLc4mNMAMikomoQDv+CKNMV/I/V9pfHrbHdZJOIQWs9gzxJPkV0SW0DYZ0hPiNrYj2UR3Qeo2piTOiYiVF1Q==
+grommet@^2.11.2:
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.11.2.tgz#557629ebf3b32b341d0ddfddd734198fb835b60b"
+  integrity sha512-GiDy6XHsMGiKxL6C9nNzD5wlH+ta5WelfurHXRF2uBuiFINPkommMlI9MosvwLneDd/00PYOdibQQtF0c9NNVw==
   dependencies:
     css "^2.2.3"
     grommet-icons "^4.2.0"
