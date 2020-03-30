@@ -18,7 +18,7 @@
     "jest": "^25.2.4",
     "jsonresume-theme-standard-resume": "^1.0.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-github-corner": "^2.3.0",
     "styled-components": "^4.4.1"
   },
