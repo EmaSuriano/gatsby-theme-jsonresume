@@ -3,7 +3,7 @@ import { grommet as theme, base } from 'grommet/themes';
 import { Heading, Grommet, Anchor, Paragraph } from 'grommet';
 import GithubCorner from 'react-github-corner';
 import { Flex, Box } from 'reflexbox';
-// import ReactJson from 'react-json-view';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import jsonResume from '../../resume.json';
 import Html from '../assets/html.svg';
 import Pdf from '../assets/pdf.svg';
@@ -11,8 +11,12 @@ import Pdf from '../assets/pdf.svg';
 const Footer = () => (
   <Box as="footer" style={{ position: 'absolute', bottom: 0, right: 0 }} mx="3">
     <Paragraph>
-      Powered by <a href="https://www.netlify.com/">Netlify</a>. Made with ❤️ by{' '}
-      <a href="https://github.com/EmaSuriano/">EmaSuriano</a>.
+      Powered by <Anchor href="https://www.netlify.com/">Netlify</Anchor>. Made
+      with{' '}
+      <span role="img" aria-label="love">
+        ❤️
+      </span>{' '}
+      by <Anchor href="https://github.com/EmaSuriano/">EmaSuriano</Anchor>.
     </Paragraph>
   </Box>
 );
@@ -30,7 +34,7 @@ export default () => (
         </span>
       </Heading>
       <Flex flexDirection={['column', 'row']}>
-        <Box width="500px">
+        <Box minWidth="400px">
           <Heading level="3">
             How does it work?{' '}
             <span role="img" aria-label="thinking">
@@ -38,32 +42,57 @@ export default () => (
             </span>
           </Heading>
           <Paragraph>
-            Provide a valid JSON structure and it will generate your resume in{' '}
-            <code>HTML</code> and <code>PDF</code> format.
+            Provide a valid JSON structure with your data, and when starting
+            Gatsby and it will generate your resume in <code>HTML</code> and{' '}
+            <code>PDF</code> format.
           </Paragraph>
-          {/* <ReactJson src={jsonResume} collapsed={1} /> */}
-        </Box>
-
-        <Box>
-          <Heading level="3">Default Theme</Heading>
           <Flex direction="row">
             <Anchor href="/resume.html" target="_blank">
-              <Html width="100px" />
+              <Html width="80px" />
             </Anchor>
             <Anchor href="/resume.pdf" target="_blank">
-              <Pdf width="100px" />
+              <Pdf width="80px" />
             </Anchor>
           </Flex>
-          <Heading level="3">Custom Theme</Heading>
+          <Heading level="3">
+            Theming{' '}
+            <span role="img" aria-label="rainbow">
+              🌈
+            </span>
+          </Heading>
+          <Paragraph>
+            You can customize how your resume will look like by changing the
+            theme property. You can use of the themes available for{' '}
+            <Anchor href="">JSON Resume</Anchor>.
+          </Paragraph>
           <Flex direction="row">
             <Anchor href="/resume-custom-theme.html" target="_blank">
-              <Html width="100px" />
+              <Html width="80px" />
             </Anchor>
             <Anchor href="/resume-custom-theme.pdf" target="_blank">
-              <Pdf width="100px" />
+              <Pdf width="80px" />
             </Anchor>
           </Flex>
+          <Paragraph>
+            For more information please check the{' '}
+            <Anchor href="https://github.com/EmaSuriano/gatsby-theme-jsonresume#usage">
+              Usage Documentation
+            </Anchor>
+            .
+          </Paragraph>
         </Box>
+
+        <Flex width="auto" height="700px" flexDirection="column">
+          <Heading level="3">
+            Example of data{' '}
+            <span role="img" aria-label="note">
+              📝
+            </span>
+          </Heading>
+          <SyntaxHighlighter language="json" showLineNumbers>
+            {JSON.stringify(jsonResume, null, 2)}
+          </SyntaxHighlighter>
+        </Flex>
       </Flex>
       <Footer />
       <GithubCorner
