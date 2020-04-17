@@ -5,9 +5,8 @@
   "author": "EmaSuriano (@EmaSuriano)",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby clean && yarn build && gatsby serve",
     "build": "gatsby build",
-    "serve": "gatsby serve",
     "test": "jest"
   },
   "dependencies": {
