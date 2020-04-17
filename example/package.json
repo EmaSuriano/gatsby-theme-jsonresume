@@ -5,21 +5,21 @@
   "author": "EmaSuriano (@EmaSuriano)",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby clean && yarn build && gatsby serve",
     "build": "gatsby build",
-    "serve": "gatsby serve",
     "test": "jest"
   },
   "dependencies": {
     "browser-monads": "^1.0.0",
-    "gatsby": "^2.19.7",
     "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby": "^2.20.18",
+    "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-theme-jsonresume": "^1.0.2",
-    "grommet": "^2.10.0",
-    "jest": "^25.1.0",
+    "grommet": "^2.12.0",
+    "jest": "^25.3.0",
     "jsonresume-theme-standard-resume": "^1.0.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-github-corner": "^2.3.0",
     "react-json-view": "^1.19.1",
     "styled-components": "^4.4.1"

@@ -14,7 +14,7 @@
 
 > A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to generate your Resume and add a new Route into your Application ✨
 
-### [Live Example](https://sad-neumann-882ab2.netlify.com/)
+### [Live Example](https://gatsby-theme-jsonresume.netlify.com/)
 
 ## Installation
 

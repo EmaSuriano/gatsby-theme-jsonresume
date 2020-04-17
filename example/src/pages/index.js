@@ -3,30 +3,19 @@ import { grommet as theme, base } from 'grommet/themes';
 import { Heading, Grommet, Anchor, Paragraph } from 'grommet';
 import GithubCorner from 'react-github-corner';
 import { Flex, Box } from 'reflexbox';
-import { window, document } from 'browser-monads';
-import ReactJson from 'react-json-view';
+// import ReactJson from 'react-json-view';
 import jsonResume from '../../resume.json';
 import Html from '../assets/html.svg';
 import Pdf from '../assets/pdf.svg';
 
-// use the component in your app!
-
 const Footer = () => (
   <Box as="footer" style={{ position: 'absolute', bottom: 0, right: 0 }} mx="3">
     <Paragraph>
-      Made with{' '}
-      <span role="img" aria-label="love">
-        ❤️
-      </span>{' '}
-      by{' '}
-      <Anchor href="https://github.com/EmaSuriano/" target="_blank">
-        EmaSuriano
-      </Anchor>
+      Powered by <a href="https://www.netlify.com/">Netlify</a>. Made with ❤️ by{' '}
+      <a href="https://github.com/EmaSuriano/">EmaSuriano</a>.
     </Paragraph>
   </Box>
 );
-
-console.log(jsonResume);
 
 export default () => (
   <Grommet theme={theme} full>
@@ -52,7 +41,7 @@ export default () => (
             Provide a valid JSON structure and it will generate your resume in{' '}
             <code>HTML</code> and <code>PDF</code> format.
           </Paragraph>
-          <ReactJson src={jsonResume} collapsed={1} />
+          {/* <ReactJson src={jsonResume} collapsed={1} /> */}
         </Box>
 
         <Box>
@@ -76,11 +65,11 @@ export default () => (
           </Flex>
         </Box>
       </Flex>
+      <Footer />
+      <GithubCorner
+        href="https://github.com/EmaSuriano/gatsby-theme-jsonresume"
+        bannerColor={base.global.colors.brand}
+      />
     </Box>
-    <Footer />
-    <GithubCorner
-      href="https://github.com/EmaSuriano/gatsby-theme-jsonresume"
-      bannerColor={base.global.colors.brand}
-    />
   </Grommet>
 );
