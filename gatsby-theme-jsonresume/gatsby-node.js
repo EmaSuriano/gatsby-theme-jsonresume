@@ -11,11 +11,11 @@ const exportPromise = ({ format, theme, name, resumeJson }) =>
         theme,
         dir: __dirname,
       },
-      error => (error ? reject(error) : resolve()),
+      (error) => (error ? reject(error) : resolve()),
     );
   });
 
-const moveToStatic = file => {
+const moveToStatic = (file) => {
   if (!existsSync('static/')) mkdirSync('static');
   renameSync(file, `static/${file}`);
 };
@@ -27,12 +27,12 @@ const moveToStatic = file => {
  * @param {string} themeOptions.theme - Theme to be used in JSONResume
  * @param {string} themeOptions.name - Name/Route for the resulting CV
  */
-module.exports.createPages = (
+module.exports.createPages = async (
   _,
   { resumeJson, theme = 'flat', name = 'resume' },
 ) => {
-  Promise.all(
-    ['html', 'pdf'].map(async format => {
+  await Promise.all(
+    ['html', 'pdf'].map(async (format) => {
       await exportPromise({ format, resumeJson, theme, name });
       moveToStatic(`${name}.${format}`);
     }),

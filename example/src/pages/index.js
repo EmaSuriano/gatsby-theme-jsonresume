@@ -1,51 +1,104 @@
 import React from 'react';
 import { grommet as theme, base } from 'grommet/themes';
-import { Box, Heading, Grommet, Anchor, Paragraph } from 'grommet';
+import { Heading, Grommet, Anchor, Paragraph } from 'grommet';
 import GithubCorner from 'react-github-corner';
+import { Flex, Box } from 'reflexbox';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import jsonResume from '../../resume.json';
+import Html from '../assets/html.svg';
+import Pdf from '../assets/pdf.svg';
+
+const Footer = () => (
+  <Flex as="footer" justifyContent="flex-end">
+    <Paragraph>
+      Powered by <Anchor href="https://www.netlify.com/">Netlify</Anchor>. Made
+      with{' '}
+      <span role="img" aria-label="love">
+        ❤️
+      </span>{' '}
+      by <Anchor href="https://github.com/EmaSuriano/">EmaSuriano</Anchor>.
+    </Paragraph>
+  </Flex>
+);
 
 export default () => (
   <Grommet theme={theme} full>
-    <Box pad="large" flex={1}>
+    <Box p={['3', '3', '4']} flex={1}>
       <Heading level="1">Gatsby-theme-JSONResume</Heading>
       <Heading level="2">
         <Anchor href="https://www.gatsbyjs.org">Gatsby Theme</Anchor> with{' '}
         <Anchor href="https://jsonresume.org/">JSONResume</Anchor> to generate
-        your Resume and add a new Route into your Application ✨
+        your Resume and add it into your Application{' '}
+        <span role="img" aria-label="spark">
+          ✨
+        </span>
       </Heading>
-      <Heading level="3">Base Theme</Heading>
-      <ul>
-        <li>
-          <Anchor href="/resume.html" label="Online" size="large" />
-        </li>
-        <li>
-          <Anchor href="/resume.pdf" label="PDF" size="large" />
-        </li>
-      </ul>
+      <Flex flexDirection={['column', 'column', 'row']}>
+        <Box minWidth={['375px', '375px', '450px']} mr={2}>
+          <Heading level="3">
+            How does it work?{' '}
+            <span role="img" aria-label="thinking">
+              🤔
+            </span>
+          </Heading>
+          <Paragraph>
+            Provide a valid JSON structure with your data, and when starting
+            Gatsby and it will generate your resume in <code>HTML</code> and{' '}
+            <code>PDF</code> format.
+          </Paragraph>
+          <Flex direction="row">
+            <Anchor href="/resume.html" target="_blank">
+              <Html width="80px" />
+            </Anchor>
+            <Anchor href="/resume.pdf" target="_blank">
+              <Pdf width="80px" />
+            </Anchor>
+          </Flex>
+          <Heading level="3">
+            Theming{' '}
+            <span role="img" aria-label="rainbow">
+              🌈
+            </span>
+          </Heading>
+          <Paragraph>
+            You can customize how your resume will look like by changing the
+            theme property. You can use of the themes available for{' '}
+            <Anchor href="">JSON Resume</Anchor>.
+          </Paragraph>
+          <Flex direction="row">
+            <Anchor href="/resume-custom-theme.html" target="_blank">
+              <Html width="80px" />
+            </Anchor>
+            <Anchor href="/resume-custom-theme.pdf" target="_blank">
+              <Pdf width="80px" />
+            </Anchor>
+          </Flex>
+          <Paragraph>
+            For more information please check the{' '}
+            <Anchor href="https://github.com/EmaSuriano/gatsby-theme-jsonresume#usage">
+              Usage Documentation
+            </Anchor>
+            .
+          </Paragraph>
+        </Box>
 
-      <Heading level="3">Custom Theme</Heading>
-      <ul>
-        <li>
-          <Anchor
-            href="/resume-custom-theme.html"
-            label="Online"
-            size="large"
-          />
-        </li>
-        <li>
-          <Anchor href="/resume-custom-theme.pdf" label="PDF" size="large" />
-        </li>
-      </ul>
+        <Flex width="auto" height="700px" flexDirection="column">
+          <Heading level="3">
+            Example of data{' '}
+            <span role="img" aria-label="note">
+              📝
+            </span>
+          </Heading>
+          <SyntaxHighlighter language="json" showLineNumbers>
+            {JSON.stringify(jsonResume, null, 2)}
+          </SyntaxHighlighter>
+        </Flex>
+      </Flex>
+      <Footer />
+      <GithubCorner
+        href="https://github.com/EmaSuriano/gatsby-theme-jsonresume"
+        bannerColor={base.global.colors.brand}
+      />
     </Box>
-    <Box as="footer" style={{ position: 'absolute', bottom: 0 }} margin="large">
-      <Paragraph margin="none">
-        Powered by <a href="https://www.netlify.com/">Netlify</a>. Made with ❤️
-        by <a href="https://github.com/EmaSuriano/">EmaSuriano</a>.
-      </Paragraph>
-    </Box>
-
-    <GithubCorner
-      href="https://github.com/EmaSuriano/gatsby-theme-jsonresume"
-      bannerColor={base.global.colors.brand}
-    />
   </Grommet>
 );

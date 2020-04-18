@@ -1,18 +1,28 @@
+const resumeJson = require('./resume.json');
+
 module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     {
-      resolve: `gatsby-theme-jsonresume`,
+      resolve: 'gatsby-theme-jsonresume',
       options: {
-        resumeJson: require('./resume.json'),
+        resumeJson,
       },
     },
     {
-      resolve: `gatsby-theme-jsonresume`,
+      resolve: 'gatsby-theme-jsonresume',
       options: {
-        resumeJson: require('./resume.json'),
+        resumeJson,
         name: 'resume-custom-theme',
         theme: 'standard-resume',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
       },
     },
   ],
