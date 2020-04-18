@@ -1,6 +1,7 @@
 # gatsby-theme-jsonresume
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5f3d0f3-3897-44ca-8956-01ca42e9df70/deploy-status)](https://app.netlify.com/sites/sad-neumann-882ab2/deploys)
+[![Build Status](https://travis-ci.com/EmaSuriano/gatsby-theme-jsonresume.svg?branch=master)](https://travis-ci.com/EmaSuriano/gatsby-theme-jsonresume)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ema-suriano/gatsby-theme-jsonresume)
 
 <p align="center">
