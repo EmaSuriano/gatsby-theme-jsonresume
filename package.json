@@ -1,20 +1,34 @@
 {
   "name": "gatsby-starter-theme-workspace",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.5",
+  "author": "EmaSuriano <emanuel.suriano@gmail.com>",
+  "description": "A Gatsby Theme with JSONResume to host your Resume in HTML and PDF",
   "main": "index.js",
+  "homepage": "https://gatsby-theme-jsonresume.netlify.com/",
+  "repository": "https://github.com/EmaSuriano/gatsby-theme-jsonresume",
+  "bugs": "https://github.com/EmaSuriano/gatsby-theme-jsonresume/issues",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "jsonresume",
+    "resume"
+  ],
   "scripts": {
     "start": "yarn workspace example start",
     "test": "yarn workspace example test",
     "build": "yarn workspace example build",
-    "test:ci": "start-server-and-test 9000"
+    "test:ci": "start-server-and-test 9000",
+    "prepublish": "oao prepublish -s gatsby-theme-jsonresume/ --copy-attrs \"description,keywords,author,license,homepage,bugs,repository,version\"",
+    "publish-package": "oao publish -s gatsby-theme-jsonresume"
   },
   "workspaces": [
     "gatsby-theme-jsonresume",
     "example"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "oao": "^1.8.0",
     "start-server-and-test": "^1.11.0"
   }
 }
