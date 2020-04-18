@@ -23,8 +23,10 @@
 This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it. You can check the [official documentation](https://www.gatsbyjs.org/docs/quick-start/) to bootstrap a Gatsby project.
 
 ```bash
-> yarn add gatsby-theme-jsonresume
+> yarn add gatsby-theme-jsonresume --ignore-engines
 ```
+
+The reason that you need to run `yarn` with the `--ignore-engines` is because `resume-cli` is hard coding the node engine ...
 
 ```javascript
 // gatsby-config.js
@@ -122,7 +124,7 @@ This repository is using [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/work
 In order to start, you need to install the dependencies in the root which will install the dependencies for both folders and link the projects.
 
 ```bash
-> yarn --ignore-engines # resume-cli is hard coding the node engine, this is only needed when developing locally
+> yarn --ignore-engines
 ```
 
 Available scripts:
