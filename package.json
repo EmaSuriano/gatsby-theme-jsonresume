@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-theme-workspace",
   "private": true,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "EmaSuriano <emanuel.suriano@gmail.com>",
   "description": "A Gatsby Theme with JSONResume to host your Resume in HTML and PDF",
   "main": "index.js",
@@ -20,8 +20,7 @@
     "test": "yarn workspace example test",
     "build": "yarn workspace example build",
     "test:ci": "start-server-and-test 9000",
-    "prepublish": "oao prepublish -s gatsby-theme-jsonresume/ --copy-attrs \"description,keywords,author,license,homepage,bugs,repository,version\"",
-    "publish-package": "oao publish -s gatsby-theme-jsonresume"
+    "prepublish": "oao prepublish -s gatsby-theme-jsonresume/ --copy-attrs \"description,keywords,author,license,homepage,bugs,repository,version\""
   },
   "workspaces": [
     "gatsby-theme-jsonresume",
