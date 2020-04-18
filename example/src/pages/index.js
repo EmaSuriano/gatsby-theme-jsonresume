@@ -9,7 +9,7 @@ import Html from '../assets/html.svg';
 import Pdf from '../assets/pdf.svg';
 
 const Footer = () => (
-  <Box as="footer" style={{ position: 'absolute', bottom: 0, right: 0 }} mx="3">
+  <Flex as="footer" justifyContent="flex-end">
     <Paragraph>
       Powered by <Anchor href="https://www.netlify.com/">Netlify</Anchor>. Made
       with{' '}
@@ -18,12 +18,12 @@ const Footer = () => (
       </span>{' '}
       by <Anchor href="https://github.com/EmaSuriano/">EmaSuriano</Anchor>.
     </Paragraph>
-  </Box>
+  </Flex>
 );
 
 export default () => (
   <Grommet theme={theme} full>
-    <Box p="4" flex={1}>
+    <Box p={['3', '3', '4']} flex={1}>
       <Heading level="1">Gatsby-theme-JSONResume</Heading>
       <Heading level="2">
         <Anchor href="https://www.gatsbyjs.org">Gatsby Theme</Anchor> with{' '}
@@ -33,8 +33,8 @@ export default () => (
           ✨
         </span>
       </Heading>
-      <Flex flexDirection={['column', 'row']}>
-        <Box minWidth="400px">
+      <Flex flexDirection={['column', 'column', 'row']}>
+        <Box minWidth={['375px', '375px', '450px']} mr={2}>
           <Heading level="3">
             How does it work?{' '}
             <span role="img" aria-label="thinking">

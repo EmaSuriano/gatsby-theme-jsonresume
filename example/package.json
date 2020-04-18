@@ -8,7 +8,8 @@
     "dev": "gatsby develop",
     "start": "gatsby clean && yarn build && gatsby serve",
     "build": "gatsby build",
-    "test": "jest"
+    "test": "percy exec -- cypress run",
+    "test:open": "percy exec -- cypress open"
   },
   "dependencies": {
     "browser-monads": "^1.0.0",
@@ -33,6 +34,8 @@
     ]
   },
   "devDependencies": {
+    "@percy/cypress": "^2.3.1",
+    "cypress": "^4.4.0",
     "reflexbox": "^4.0.6"
   }
 }

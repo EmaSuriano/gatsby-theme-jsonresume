@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - stable
+
+addons:
+  apt:
+    packages:
+      # cypress dep
+      - libgconf-2-4
+
+cache:
+  yarn: true
+  directories:
+    - ~/.npm
+    - ~/.cache
+    - node_modules
+
+install:
+  - yarn --frozen-lockfile --ignore-engines
+
+script:
+  - yarn test:ci
