@@ -18,7 +18,7 @@
     "gatsby-plugin-styled-components": "^3.3.2",
     "gatsby-theme-jsonresume": "^1.0.2",
     "grommet": "^2.13.0",
-    "jest": "^25.5.4",
+    "jest": "^26.0.1",
     "jsonresume-theme-standard-resume": "^1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
