@@ -4787,10 +4787,15 @@ commander@4.1.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
   integrity sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
 
-commander@^2.11.0, commander@^2.20.0, commander@^2.20.3, commander@^2.7.1, commander@^2.9.0, commander@~2.20.3:
+commander@^2.11.0, commander@^2.20.0, commander@^2.20.3, commander@^2.7.1, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
+commander@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
+  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
 
 common-tags@1.8.0, common-tags@^1.8.0:
   version "1.8.0"
@@ -10509,7 +10514,7 @@ lodash.foreach@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
   integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
 
-lodash.get@^4.0.0:
+lodash.get@^4.0.0, lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
@@ -13858,10 +13863,10 @@ restore-cursor@^3.1.0:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
 
-resume-cli@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/resume-cli/-/resume-cli-1.2.7.tgz#cbf78fcb19c78f34b70f6666d1dc7b8dcf546f30"
-  integrity sha512-QkDQxWnZrMh7aDfVcCtiiP14Lndo338TzRX0sNeWiooaAlNiQfyHy+6Y5v40hpcsP55PR05XNQn/xpQU9JMtPQ==
+resume-cli@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/resume-cli/-/resume-cli-1.2.8.tgz#ac91d3f9861970e4bbf9cf9e97f0bccec992f439"
+  integrity sha512-UgeRgz6RE77lC54t1imguXlcFoPN2W7zKTON4lVJHKosLW++VwVUetXof7BDq6SaIe6cbOWZTTkFh/P+nXxFXw==
   dependencies:
     async "^1.5.0"
     btoa "^1.2.1"
@@ -13869,7 +13874,7 @@ resume-cli@^1.2.7:
     char-spinner "^1.0.1"
     cli-spinner "^0.2.1"
     colors "^1.1.2"
-    commander "^2.9.0"
+    commander "^5.0.0"
     dotenv "^2.0.0"
     jsonlint "^1.6.2"
     jsonresume-theme-crisp "^0.2.12"
@@ -13885,6 +13890,9 @@ resume-cli@^1.2.7:
     should "^11.1.0"
     superagent "^3.8.3"
     terminal-menu "^2.1.1"
+    util.promisify "^1.0.1"
+    z-schema "^4.2.2"
+    z-schema-errors "^0.2.1"
 
 resume-schema@0.0.18, resume-schema@latest:
   version "0.0.18"
@@ -16285,6 +16293,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+validator@^12.0.0:
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-12.2.0.tgz#660d47e96267033fd070096c3b1a6f2db4380a0a"
+  integrity sha512-jJfE/DW6tIK1Ek8nCfNFqt8Wb3nzMoAbocBF6/Icgg1ZFSBpObdnwVY2jQj6qUqzhx5jc71fpvBWyLGO7Xl+nQ==
+
 validator@^9.0.0:
   version "9.4.1"
   resolved "https://registry.yarnpkg.com/validator/-/validator-9.4.1.tgz#abf466d398b561cd243050112c6ff1de6cc12663"
@@ -17099,6 +17112,24 @@ yurnalist@^1.1.2:
     semver "^6.3.0"
     strip-ansi "^5.2.0"
     strip-bom "^4.0.0"
+
+z-schema-errors@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/z-schema-errors/-/z-schema-errors-0.2.1.tgz#f96d143265e867f6dbfdeddaa96b12939ae09243"
+  integrity sha1-+W0UMmXoZ/bb/e3aqWsSk5rgkkM=
+  dependencies:
+    xtend "^4.0.0"
+
+z-schema@^4.2.2:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/z-schema/-/z-schema-4.2.3.tgz#85f7eea7e6d4fe59a483462a98f511bd78fe9882"
+  integrity sha512-zkvK/9TC6p38IwcrbnT3ul9in1UX4cm1y/VZSs4GHKIiDCrlafc+YQBgQBUdDXLAoZHf2qvQ7gJJOo6yT1LH6A==
+  dependencies:
+    lodash.get "^4.4.2"
+    lodash.isequal "^4.5.0"
+    validator "^12.0.0"
+  optionalDependencies:
+    commander "^2.7.1"
 
 z-schema@~3.19.0:
   version "3.19.1"
