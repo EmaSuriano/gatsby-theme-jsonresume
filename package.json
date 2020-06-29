@@ -27,7 +27,7 @@
     "example"
   ],
   "devDependencies": {
-    "oao": "^1.8.0",
+    "oao": "^1.10.0",
     "start-server-and-test": "^1.11.0"
   }
 }
