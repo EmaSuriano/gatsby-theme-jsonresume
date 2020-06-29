@@ -15,7 +15,7 @@
     "browser-monads": "^1.0.0",
     "gatsby": "^2.23.7",
     "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-styled-components": "^3.3.6",
     "gatsby-theme-jsonresume": "^1.0.2",
     "grommet": "^2.14.0",
     "jest": "^26.1.0",
