@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - stable
+  - 12
 
 addons:
   apt:
@@ -11,10 +11,14 @@ addons:
 
 cache:
   yarn: true
+  directories:
+    - ~/.npm
+    - ~/.cache
+    - node_modules
 
 install:
   - yarn --frozen-lockfile --ignore-engines
 
 script:
-  - yarn test:ci
   - yarn build
+  - yarn test:ci
