@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "browser-monads": "^1.0.0",
-    "gatsby": "^2.24.11",
+    "gatsby": "^2.24.40",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-theme-jsonresume": "^1.0.2",
