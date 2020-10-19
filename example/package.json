@@ -17,7 +17,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.3.14",
     "gatsby-theme-jsonresume": "^1.0.2",
-    "grommet": "^2.15.1",
+    "grommet": "^2.15.2",
     "jest": "^26.5.3",
     "jsonresume-theme-standard-resume": "^1.3.0",
     "react": "^16.14.0",
