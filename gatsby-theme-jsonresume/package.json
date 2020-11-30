@@ -8,7 +8,7 @@
     "gatsby": "^2.6.0"
   },
   "dependencies": {
-    "resume-cli": "^1.2.8"
+    "resume-cli": "^2.2.3"
   },
   "engines": {
     "node": ">=8"
