@@ -1853,13 +1853,13 @@
     which "^2.0.1"
     winston "^3.0.0"
 
-"@percy/cypress@^2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-2.3.2.tgz#10853df07808f171d4bdd9df0cb62fdb7a89ee67"
-  integrity sha512-pRBUft9gOM5Jduyu0VKfucHy8QTDTIw8y+Zu7JNrNHWa0JcfOJcpQbhZJ6AGmA5xzad05S6wjQ8CnG8y3iaj/w==
+"@percy/cypress@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-2.3.4.tgz#9605fd848ab27aab795515a22a8868078ba57838"
+  integrity sha512-UiVnLdcgRnOD1C5orkQiCQC1OFcb/Kt4CWSOVg61JkWNgeWb03os9HN2vjlwgb11eCR8gLHBs+O7T9MRMy28Qg==
   dependencies:
     "@percy/agent" "~0"
-    axios "^0.20.0"
+    axios "^0.21.0"
 
 "@pieh/friendly-errors-webpack-plugin@1.7.0-chalk-2":
   version "1.7.0-chalk-2"
@@ -3086,6 +3086,13 @@ axios@^0.20.0:
   version "0.20.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
   integrity sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+  dependencies:
+    follow-redirects "^1.10.0"
+
+axios@^0.21.0:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
