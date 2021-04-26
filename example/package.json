@@ -35,7 +35,7 @@
     ]
   },
   "devDependencies": {
-    "@percy/cypress": "^2.3.2",
+    "@percy/cypress": "^3.1.0",
     "cypress": "^5.6.0"
   },
   "description": "A Gatsby Theme with JSONResume to host your Resume in HTML and PDF",
