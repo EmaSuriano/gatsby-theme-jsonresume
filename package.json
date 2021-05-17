@@ -28,6 +28,6 @@
   ],
   "devDependencies": {
     "oao": "^2.0.0",
-    "start-server-and-test": "^1.11.6"
+    "start-server-and-test": "^1.12.2"
   }
 }
