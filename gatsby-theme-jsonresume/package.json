@@ -21,7 +21,7 @@
     "gatsby": "^2.6.0"
   },
   "dependencies": {
-    "resume-cli": "^3.0.4"
+    "resume-cli": "^3.0.5"
   },
   "resolutions": {
     "html-to-text": "7"

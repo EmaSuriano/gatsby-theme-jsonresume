@@ -9,11 +9,10 @@
   "scripts": {
     "start": "yarn workspace example start",
     "build": "yarn workspace example build",
-    "test": "yarn workspace example test:ci",
+    "test": "yarn workspace example test",
     "release": "yarn workspace gatsby-theme-jsonresume release"
   },
   "resolutions": {
     "html-to-text": "7"
-  },
-  "dependencies": {}
+  }
 }
