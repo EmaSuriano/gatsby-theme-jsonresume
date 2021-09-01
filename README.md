@@ -14,7 +14,7 @@
 
 > A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to host your Resume in HTML and PDF ✨
 
-### [Live Example 🔥](https://gatsby-theme-jsonresume.netlify.com/)
+### [Demo](https://gatsby-theme-jsonresume.netlify.com/)
 
 ## Installation 📦
 
