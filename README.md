@@ -8,7 +8,7 @@
   </a>
   <img src="https://image.flaticon.com/icons/svg/148/148836.svg" alt="Heart" width="40" />
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="80" />
+    <img alt="Gatsby" src="https://seeklogo.com/images/G/gatsby-logo-1A245AD37F-seeklogo.com.png" width="80" />
   </a>
 </p>
 
