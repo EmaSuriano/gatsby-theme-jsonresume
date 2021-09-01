@@ -1,8 +1,6 @@
 # gatsby-theme-jsonresume
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5f3d0f3-3897-44ca-8956-01ca42e9df70/deploy-status)](https://app.netlify.com/sites/sad-neumann-882ab2/deploys)
-[![Build Status](https://travis-ci.com/EmaSuriano/gatsby-theme-jsonresume.svg?branch=master)](https://travis-ci.com/EmaSuriano/gatsby-theme-jsonresume)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ema-suriano/gatsby-theme-jsonresume)
 
 <p align="center">
   <a href="https://github.com/jsonresume">
@@ -23,10 +21,8 @@
 This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it. You can check the [official documentation](https://www.gatsbyjs.org/docs/quick-start/) to bootstrap a Gatsby project.
 
 ```bash
-> yarn add gatsby-theme-jsonresume --ignore-engines
+> yarn add gatsby-theme-jsonresume
 ```
-
-The reason that you need to run `yarn` with the `--ignore-engines` is because `resume-cli` is hard coding the node engine ...
 
 ```javascript
 // gatsby-config.js
@@ -50,7 +46,7 @@ I highly recommend using [LinkedIn to JSON Resume](https://jmperezperez.com/link
 
 The way this theme adds a new route in your application is by generating a plain `html` file, as well as the `pdf` file, and placing them inside the `static` folder.
 
-The way Gatsby works with static files is they are going to be copied on the `build` step, they **won't be accessible during development**.
+The way Gatsby works with static files is they are going to be copied on the `build` step, they **won't be accessible during development**. But it will be obviously accessible after you deploy your site.
 
 The last step is then to build and serve your serve. At this point, you should be able to access the new route.
 
@@ -124,7 +120,7 @@ This repository is using [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/work
 In order to start, you need to install the dependencies in the root which will install the dependencies for both folders and link the projects.
 
 ```bash
-> yarn --ignore-engines
+> yarn
 ```
 
 Available scripts:
