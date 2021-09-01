@@ -1,21 +1,9 @@
 {
   "name": "gatsby-theme-jsonresume",
-  "version": "1.0.6",
+  "version": "0.0.0",
   "main": "index.js",
   "author": "EmaSuriano <emanuel.suriano@gmail.com>",
   "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^2.6.0"
-  },
-  "dependencies": {
-    "resume-cli": "^1.2.8"
-  },
-  "engines": {
-    "node": ">=8"
-  },
-  "scripts": {
-    "prepublish": "cd .. && yarn prepublish"
-  },
   "description": "A Gatsby Theme with JSONResume to host your Resume in HTML and PDF",
   "keywords": [
     "gatsby",
@@ -25,5 +13,17 @@
   ],
   "homepage": "https://gatsby-theme-jsonresume.netlify.com/",
   "bugs": "https://github.com/EmaSuriano/gatsby-theme-jsonresume/issues",
-  "repository": "https://github.com/EmaSuriano/gatsby-theme-jsonresume"
+  "repository": "https://github.com/EmaSuriano/gatsby-theme-jsonresume",
+  "scripts": {
+    "release": "npx semantic-release"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.6.0"
+  },
+  "dependencies": {
+    "resume-cli": "^3.0.4"
+  },
+  "resolutions": {
+    "html-to-text": "7"
+  }
 }
