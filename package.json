@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "workspaces": [
     "gatsby-theme-jsonresume",
-    "example"
+    "gatsby-starter-jsonresume"
   ],
   "scripts": {
-    "start": "yarn workspace example start",
-    "build": "yarn workspace example build",
-    "test": "yarn workspace example test",
+    "start": "yarn workspace gatsby-starter-jsonresume start",
+    "build": "yarn workspace gatsby-starter-jsonresume build",
+    "test": "yarn workspace gatsby-starter-jsonresume test",
     "release": "yarn workspace gatsby-theme-jsonresume release"
   },
   "resolutions": {

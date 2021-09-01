@@ -115,7 +115,7 @@ module.exports = {
 
 This repository is using [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/). The structure is the following:
 
-- `/example`: Demo project which shows how to use the theme.
+- `/gatsby-starter-jsonresume`: Demo project which shows how to use the theme.
 - `/gatsby-theme-jsonresume`: the theme itself.
 
 In order to start, you need to install the dependencies in the root which will install the dependencies for both folders and link the projects.
