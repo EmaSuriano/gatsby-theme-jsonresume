@@ -9,6 +9,7 @@
     "start": "yarn build && gatsby serve",
     "prebuild": "gatsby clean",
     "build": "gatsby build",
+    "pretest": "yarn build",
     "test": "jest"
   },
   "dependencies": {
