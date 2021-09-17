@@ -8288,7 +8288,7 @@ jsonresume-theme-even@^0.6.0:
     micromark "^2.11.4"
     striptags "^3.1.1"
 
-jsonresume-theme-flat@^0.3.7:
+jsonresume-theme-flat@^0.3.7, jsonresume-theme-flat@~0.3.7:
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/jsonresume-theme-flat/-/jsonresume-theme-flat-0.3.7.tgz#a264f00d6c5850dd7c4b5c15d64204d213a85552"
   integrity sha1-omTwDWxYUN18S1wV1kIE0hOoVVI=
@@ -11022,7 +11022,7 @@ resume-cli@^1.2.7:
     z-schema "^4.2.2"
     z-schema-errors "^0.2.1"
 
-resume-cli@^3.0.5:
+resume-cli@~3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/resume-cli/-/resume-cli-3.0.5.tgz#c9f7d8eb2684ec7ee4b30571ad0575004cd4fb3f"
   integrity sha512-C5/LyLv0wcwg46pL3b/AzwMBpYCwa/FiAt13tBUfZQ1JgJshWYaB5TF3NH1Evlfhb6VpCvSXw+FY4By83pflCA==

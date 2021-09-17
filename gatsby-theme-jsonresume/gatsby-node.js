@@ -1,19 +1,15 @@
-const { exportResume } = require('resume-cli/lib');
+const exportResume = require('resume-cli/build/export-resume');
 const { existsSync, mkdirSync, renameSync } = require('fs');
 
-const exportPromise = ({ format, theme, name, resumeJson }) =>
-  new Promise((resolve, reject) => {
-    exportResume(
-      resumeJson,
-      name,
-      {
-        format,
-        theme,
-        dir: __dirname,
-      },
-      (error) => (error ? reject(error) : resolve()),
-    );
-  });
+const exportPromise = ({ format, theme, fileName, resume }) =>
+    new Promise((resolve, reject) => {
+        exportResume({
+            format,
+            theme,
+            fileName,
+            resume,
+        }, (error) => (error ? reject(error) : resolve()))
+    });
 
 const moveToStatic = (file) => {
   if (!existsSync('static/')) mkdirSync('static');
@@ -29,11 +25,11 @@ const moveToStatic = (file) => {
  */
 module.exports.createPages = async (
   _,
-  { resumeJson, theme = 'flat', name = 'resume' },
+  { resumeJson, theme = 'jsonresume-theme-flat', name = 'resume' },
 ) => {
   await Promise.all(
     ['html', 'pdf'].map(async (format) => {
-      await exportPromise({ format, resumeJson, theme, name });
+      await exportPromise({ format, resume: resumeJson, theme, fileName: name });
       moveToStatic(`${name}.${format}`);
     }),
   );
