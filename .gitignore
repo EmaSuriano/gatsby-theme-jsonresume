@@ -4,3 +4,5 @@ node_modules
 .DS_Store
 .env
 static/
+.idea
+yarn-error.log

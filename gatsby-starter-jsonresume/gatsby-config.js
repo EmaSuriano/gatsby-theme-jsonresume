@@ -14,7 +14,7 @@ module.exports = {
       options: {
         resumeJson,
         name: 'resume-custom-theme',
-        theme: 'standard-resume',
+        theme: 'jsonresume-theme-standard-resume',
       },
     },
     {

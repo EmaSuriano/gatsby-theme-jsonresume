@@ -61,11 +61,11 @@ info gatsby serve running at: http://localhost:9000/
 
 ### Configuration 🛠
 
-| Name         | Description                     | Required | Default Value |
-| ------------ | ------------------------------- | -------- | ------------- |
-| `resumeJson` | Data for resume                 | `true`   |               |
-| `theme`      | Theme to be used in JSONResume  | `false`  | `"flat"`      |
-| `name`       | Name/Route for the resulting CV | `false`  | `"resume"`    |
+| Name         | Description                     | Required | Default Value                  |
+| ------------ | ------------------------------- | -------- | ------------------------------ |
+| `resumeJson` | Data for resume                 | `true`   |                                |
+| `theme`      | Theme to be used in JSONResume  | `false`  | `"jsonresume-theme-flat"`      |
+| `name`       | Name/Route for the resulting CV | `false`  | `"resume"`                     |
 
 #### Using a different Theme 🌈
 
@@ -87,7 +87,7 @@ module.exports = {
       resolve: `gatsby-theme-jsonresume`,
       options: {
         resumeJson: { // ...JSON Resume Schema },
-        theme: 'orbit',
+        theme: 'jsonresume-theme-orbit',
       },
     },
   ],
