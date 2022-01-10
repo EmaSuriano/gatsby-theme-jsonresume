@@ -15,7 +15,7 @@
   "dependencies": {
     "gatsby": "^3.14.3",
     "gatsby-plugin-react-svg": "^3.1.0",
-    "gatsby-plugin-styled-components": "^4.14.0",
+    "gatsby-plugin-styled-components": "^5.4.0",
     "gatsby-theme-jsonresume": "^1.0.2",
     "grommet": "^2.19.1",
     "jest": "^27.4.7",
