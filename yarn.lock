@@ -11445,10 +11445,10 @@ resume-cli@^1.2.7:
     z-schema "^4.2.2"
     z-schema-errors "^0.2.1"
 
-resume-cli@~3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/resume-cli/-/resume-cli-3.0.5.tgz#c9f7d8eb2684ec7ee4b30571ad0575004cd4fb3f"
-  integrity sha512-C5/LyLv0wcwg46pL3b/AzwMBpYCwa/FiAt13tBUfZQ1JgJshWYaB5TF3NH1Evlfhb6VpCvSXw+FY4By83pflCA==
+resume-cli@~3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/resume-cli/-/resume-cli-3.0.6.tgz#357426cfca42c3655e7b0bf1605992c74d5afe1d"
+  integrity sha512-jhUC5nIYTnRcWCxWgFgGhHtG2tOxelVcSqmkpfP20qRlUb/w03bi9G6Y970oXE9Gs/UM67Ev+l+q/ffsBxSXGQ==
   dependencies:
     async "^3.2.0"
     browser-sync "^2.26.7"
