@@ -26,7 +26,7 @@
     "react-json-view": "^1.21.3",
     "react-syntax-highlighter": "^15.5.0",
     "reflexbox": "^4.0.6",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.6"
   },
   "description": "A Gatsby Theme with JSONResume to host your Resume in HTML and PDF",
   "keywords": [
