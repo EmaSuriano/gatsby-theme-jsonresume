@@ -1,23 +1,13 @@
 # gatsby-theme-jsonresume
 
 [![Master](https://github.com/EmaSuriano/gatsby-theme-jsonresume/actions/workflows/master.yml/badge.svg)](https://github.com/EmaSuriano/gatsby-theme-jsonresume/actions/workflows/master.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5f3d0f3-3897-44ca-8956-01ca42e9df70/deploy-status)](https://app.netlify.com/sites/sad-neumann-882ab2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/131caa59-db03-4369-a485-1980d99a7af6/deploy-status)](https://app.netlify.com/sites/gatsby-theme-jsonresume/deploys)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![npm version](https://badge.fury.io/js/gatsby-theme-jsonresume.svg)](https://badge.fury.io/js/gatsby-theme-jsonresume)
 
-<p align="center">
-  <a href="https://github.com/jsonresume">
-    <img alt="JSON Resume" src="https://avatars3.githubusercontent.com/u/7943272?s=200&v=4" width="80" />
-  </a>
-  <img src="https://image.flaticon.com/icons/svg/148/148836.svg" alt="Heart" width="40" />
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://seeklogo.com/images/G/gatsby-logo-1A245AD37F-seeklogo.com.png" width="80" />
-  </a>
-</p>
+> A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to host your Resume in HTML and PDF
 
-> A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to host your Resume in HTML and PDF ✨
-
-### [Demo](https://gatsby-theme-jsonresume.netlify.com/)
+### [Demo ✨](https://gatsby-theme-jsonresume.netlify.com/)
 
 ## Installation 📦
 
@@ -61,11 +51,11 @@ info gatsby serve running at: http://localhost:9000/
 
 ### Configuration 🛠
 
-| Name         | Description                     | Required | Default Value                  |
-| ------------ | ------------------------------- | -------- | ------------------------------ |
-| `resumeJson` | Data for resume                 | `true`   |                                |
-| `theme`      | Theme to be used in JSONResume  | `false`  | `"jsonresume-theme-flat"`      |
-| `name`       | Name/Route for the resulting CV | `false`  | `"resume"`                     |
+| Name         | Description                     | Required | Default Value             |
+| ------------ | ------------------------------- | -------- | ------------------------- |
+| `resumeJson` | Data for resume                 | `true`   |                           |
+| `theme`      | Theme to be used in JSONResume  | `false`  | `"jsonresume-theme-flat"` |
+| `name`       | Name/Route for the resulting CV | `false`  | `"resume"`                |
 
 #### Using a different Theme 🌈
 

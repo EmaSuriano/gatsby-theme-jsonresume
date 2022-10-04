@@ -7,6 +7,8 @@ module.exports = {
       resolve: 'gatsby-theme-jsonresume',
       options: {
         resumeJson,
+        // fix for workspaces
+        theme: '../node_modules/jsonresume-theme-standard-resume',
       },
     },
     {
@@ -14,7 +16,8 @@ module.exports = {
       options: {
         resumeJson,
         name: 'resume-custom-theme',
-        theme: 'jsonresume-theme-standard-resume',
+        // fix for workspaces
+        theme: '../node_modules/jsonresume-theme-standard-resume',
       },
     },
     {
