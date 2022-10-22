@@ -13,6 +13,10 @@
 This package is a Gatsby Theme, therefore you need a project using Gatsby v2 installed to use it. You can check the [official documentation](https://www.gatsbyjs.org/docs/quick-start/) to bootstrap a Gatsby project.
 
 ```bash
+# npm
+> npm install gatsby-theme-jsonresume
+
+# yarn 
 > yarn add gatsby-theme-jsonresume
 ```
 
