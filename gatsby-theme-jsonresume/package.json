@@ -18,7 +18,7 @@
     "release": "npx semantic-release"
   },
   "peerDependencies": {
-    "gatsby": "^3.0.0"
+    "gatsby": "3.x || 4.x"
   },
   "dependencies": {
     "resume-cli": "~3.0.7",

@@ -3,7 +3,6 @@
 [![Master](https://github.com/EmaSuriano/gatsby-theme-jsonresume/actions/workflows/master.yml/badge.svg)](https://github.com/EmaSuriano/gatsby-theme-jsonresume/actions/workflows/master.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/131caa59-db03-4369-a485-1980d99a7af6/deploy-status)](https://app.netlify.com/sites/gatsby-theme-jsonresume/deploys)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![npm version](https://badge.fury.io/js/gatsby-theme-jsonresume.svg)](https://badge.fury.io/js/gatsby-theme-jsonresume)
 
 > A [Gatsby Theme](https://www.gatsbyjs.org) with [JSONResume](https://jsonresume.org/) to host your Resume in HTML and PDF
 
