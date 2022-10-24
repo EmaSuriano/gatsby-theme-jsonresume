@@ -8408,10 +8408,10 @@ jsonresume-theme-flat@~0.3.7:
   dependencies:
     handlebars "^2.0.0-alpha.4"
 
-jsonresume-theme-standard-resume@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/jsonresume-theme-standard-resume/-/jsonresume-theme-standard-resume-1.3.0.tgz#8e20198832019b64650e7be18de1154c6136428e"
-  integrity sha512-bfoHcnytXoh4yoR/VMkcXNwED2gw0gW4JQ7LBZWBjEFuhOK/Q/qGFHoDOwMcYbuFriXIdPfDpJu8r2JvkXVsxA==
+jsonresume-theme-standard-resume@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jsonresume-theme-standard-resume/-/jsonresume-theme-standard-resume-2.0.0.tgz#2541b98d17ecfbf6fa664f1aac45bd93e10919c0"
+  integrity sha512-UugqoYLyAXs136+DFp7QvGjkSVs6bEHJH27/guc0/xmqewwNEsp3JHhINtZLxYIPsm+DG8iVKgMuh/A3uESCgA==
   dependencies:
     handlebars "^4.0.12"
     helper-date "^1.0.1"
