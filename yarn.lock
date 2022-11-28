@@ -6425,10 +6425,10 @@ gatsby-plugin-react-svg@^3.1.0:
   dependencies:
     svg-react-loader "^0.4.6"
 
-gatsby-plugin-styled-components@^5.24.0:
-  version "5.24.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-5.24.0.tgz#ec4ee88af60b32f3e3207625f3660b5897b6c5f6"
-  integrity sha512-GfflaD1nB7Qx4YHuUpNic5uA3VZR1TxpnyYgMEhIKBZXIWjk/n9wFwUZNniDpBrLjhIWrikOJ0ceHODumk8WEA==
+gatsby-plugin-styled-components@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.2.0.tgz#c48814b0f2263a2af76a7b3cd6d231df688684f3"
+  integrity sha512-Rvn1K3HDNC+OuxRv8cw/yrBNcJ6TN+3lzDcLibMANpx32OP2hMGFVWNFNgx15mqRCq2gaawZNt6TVte6drgDxA==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
